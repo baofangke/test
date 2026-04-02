@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying manuscript."
+title: "Projection-Based Inference for Low-Rank Matrix and Tensor Regression"
+type: software
+authors:
+  - family-names: "Ke"
+    given-names: "Baofang"
+repository-code: "https://github.com/baofangke/projection-inference-low-rank"
+license: "MIT"
