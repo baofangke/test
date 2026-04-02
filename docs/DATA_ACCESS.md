@@ -15,7 +15,7 @@ Only lightweight analysis outputs are included, such as:
 - cross-validation summaries,
 - inference summaries,
 - manuscript figures,
-- algorithm notes describing how the results were produced.
+- selected result tables and plots.
 
 ## What a user must obtain separately
 

@@ -9,7 +9,7 @@ This directory contains lightweight outputs that support the claims written into
 
 ## Tensor
 
-- `tensor/rank_selection/`: Tucker-rank selection summaries and algorithm note
+- `tensor/rank_selection/`: Tucker-rank selection summaries
 - `tensor/inference_rank252_foldcentered/`: fixed-rank `(2,5,2)` tensor inference outputs and figures
 
 These folders are intended for inspection and provenance tracking rather than as substitutes for the restricted upstream EEG data.

@@ -1,12 +1,8 @@
 # Projection-Based Inference for Low-Rank Matrix and Tensor Regression
 
-This repository is a curated public-release skeleton for the manuscript currently maintained as `ConstrainMat0330.tex`. It collects:
+This repository accompanies the manuscript on projection-based inference for low-rank matrix and tensor regression. It contains the paper source, the main MATLAB/Python scripts used for the reported real-data analyses, and lightweight result files underlying the figures and tables discussed in the manuscript.
 
-- the paper source used for submission preparation,
-- the core MATLAB/Python scripts used to generate the real-data results reported in the paper,
-- lightweight result files, figures, and algorithm notes needed to verify the written claims.
-
-It does **not** redistribute the raw Healthy Brain Network (HBN) EEG data or heavy subject-level derivative files.
+The real-data application uses resting-state EEG summaries derived from the Healthy Brain Network (HBN). The repository does not redistribute raw HBN files or subject-level processed data.
 
 ## Repository layout
 
@@ -14,39 +10,29 @@ It does **not** redistribute the raw Healthy Brain Network (HBN) EEG data or hea
 data/       Placeholder location for locally regenerated ROI10 MATLAB input
 paper/      Manuscript source, tables, and figures used by the paper
 code/       MATLAB and Python scripts used for rank selection and inference
-results/    Lightweight CSV/PNG/PDF outputs that support the reported results
-docs/       Reproducibility notes, data-access notes, and file-to-result mapping
+results/    Lightweight CSV/PNG outputs supporting the reported results
+docs/       Short notes on data access and software dependencies
 external/   Optional third-party dependencies such as Tensor Toolbox
 ```
 
-## What is included
+## Included
 
-- Final manuscript source in [`paper/main.tex`](paper/main.tex)
-- Real-data figures used by the paper
-- Matrix rank-selection and inference outputs for the `log10(EC) - log10(EO)` analysis
-- Tensor rank-selection outputs and fixed-rank `(2,5,2)` inference outputs
-- Standalone PDF notes describing the matrix/tensor rank-selection and inference procedures
+- manuscript source in [`paper/main.tex`](paper/main.tex)
+- simulation and real-data figures used by the paper
+- matrix rank-selection outputs for the `log10(EC)-log10(EO)` analysis
+- matrix inference outputs for the selected rank-1 model
+- tensor rank-selection outputs
+- tensor inference outputs for the fixed-rank `(2,5,2)` analysis
+- curated MATLAB and Python entry-point scripts
 
-## What is not included
+## Not included
 
 - Raw HBN releases or participant-level EEG files
 - Large `.mat` files that contain subject-level processed power arrays
 - Legacy manuscript drafts and LaTeX build artifacts
-- Intermediate chunk directories used only to complete long tensor runs
+- Detailed internal process notes and draft-stage writeups
 
-## Reproducibility scope
-
-The public release is intended to support:
-
-1. inspection of the manuscript source,
-2. inspection of the main analysis scripts,
-3. verification of the reported summary results from lightweight outputs,
-4. reconstruction of the workflow once the user has separately obtained the required HBN data.
-
-Some scripts in [`code/`](code) still contain local absolute paths from the original workstation. See [`docs/PATHS_AND_PORTABILITY.md`](docs/PATHS_AND_PORTABILITY.md) before attempting a clean rerun on a new machine.
-The current release removes the original workstation drive paths from the copied entry-point scripts and instead expects the processed ROI10 MATLAB file at [`data/hbn_bandpower_8band_roi10.mat`](data/hbn_bandpower_8band_roi10.mat) unless an explicit path is provided.
-
-## Entry points
+## Main entry points
 
 - Matrix 5-fold CV rank selection:
   [`code/python/run_hbn_trace_regression_5fold_cv_log_contrast.py`](code/python/run_hbn_trace_regression_5fold_cv_log_contrast.py)
@@ -57,11 +43,8 @@ The current release removes the original workstation drive paths from the copied
 - Tensor fixed-rank `(2,5,2)` inference:
   [`code/matlab/run_roi10_tsrproj_loading_ci_analysis.m`](code/matlab/run_roi10_tsrproj_loading_ci_analysis.m)
 
-## Before publishing to GitHub
+## Data and dependencies
 
-- choose a license,
-- remove any remaining private local paths if you want one-command reproducibility,
-- decide whether to keep compiled PDFs under version control,
-- verify that no subject-level restricted data are included.
-
-See [`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md).
+- place the regenerated ROI10 MATLAB file at [`data/hbn_bandpower_8band_roi10.mat`](data/hbn_bandpower_8band_roi10.mat), or pass an explicit path to the scripts;
+- for the tensor analysis, provide Tensor Toolbox either via `TENSOR_TOOLBOX_ROOT` or by placing it under [`external/`](external);
+- see [`docs/DATA_ACCESS.md`](docs/DATA_ACCESS.md) and [`docs/MATLAB_DEPENDENCIES.md`](docs/MATLAB_DEPENDENCIES.md).
