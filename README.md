@@ -1,8 +1,8 @@
 # Projection-Based Inference for Low-Rank Matrix and Tensor Regression
 
-This repository accompanies the manuscript on projection-based inference for low-rank matrix and tensor regression. It contains the paper source, the main MATLAB/Python scripts used for the reported real-data analyses, and lightweight result files underlying the figures and tables discussed in the manuscript.
+This repository accompanies the manuscript on projection-based inference for low-rank matrix and tensor regression. It provides the manuscript source, the principal MATLAB/Python scripts used in the numerical studies and real-data analysis, and a curated set of lightweight outputs underlying the reported figures and tables.
 
-The real-data application uses resting-state EEG summaries derived from the Healthy Brain Network (HBN). The repository does not redistribute raw HBN files or subject-level processed data.
+The real-data application is based on resting-state EEG summaries derived from the Healthy Brain Network (HBN). The purpose of this release is to document the analysis workflow and the reported inferential results while avoiding redistribution of restricted raw HBN files or subject-level processed data.
 
 ## Repository layout
 
