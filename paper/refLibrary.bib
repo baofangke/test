@@ -1,0 +1,2034 @@
+@Article{Ma2023,
+  author        = {Cong Ma and Xingyu Xu and Tian Tong and Yuejie Chi},
+  title         = {Provably Accelerating Ill-Conditioned Low-rank Estimation via Scaled Gradient Descent, Even with Overparameterization},
+  year          = {2023},
+  month         = oct,
+  abstract      = {Many problems encountered in science and engineering can be formulated as estimating a low-rank object (e.g., matrices and tensors) from incomplete, and possibly corrupted, linear measurements. Through the lens of matrix and tensor factorization, one of the most popular approaches is to employ simple iterative algorithms such as gradient descent (GD) to recover the low-rank factors directly, which allow for small memory and computation footprints. However, the convergence rate of GD depends linearly, and sometimes even quadratically, on the condition number of the low-rank object, and therefore, GD slows down painstakingly when the problem is ill-conditioned. This chapter introduces a new algorithmic approach, dubbed scaled gradient descent (ScaledGD), that provably converges linearly at a constant rate independent of the condition number of the low-rank object, while maintaining the low per-iteration cost of gradient descent for a variety of tasks including sensing, robust principal component analysis and completion. In addition, ScaledGD continues to admit fast global convergence to the minimax-optimal solution, again almost independent of the condition number, from a small random initialization when the rank is over-specified in the presence of Gaussian noise. In total, ScaledGD highlights the power of appropriate preconditioning in accelerating nonconvex statistical estimation, where the iteration-varying preconditioners promote desirable invariance properties of the trajectory with respect to the symmetry in low-rank factorization without hurting generalization.},
+  archiveprefix = {arXiv},
+  eprint        = {2310.06159},
+  file          = {:http\://arxiv.org/pdf/2310.06159v1:PDF},
+  groups        = {Scaled GD, Overparam},
+  keywords      = {cs.LG, math.OC, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{Tong2022,
+  author    = {Tong, Tian and Ma, Cong and Chi, Yuejie},
+  booktitle = {ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  title     = {Accelerating ILL-Conditioned Robust Low-Rank Tensor Regression},
+  year      = {2022},
+  month     = may,
+  publisher = {IEEE},
+  doi       = {10.1109/icassp43922.2022.9746705},
+  groups    = {Scaled GD},
+}
+
+@Article{Tong2021sub,
+  author    = {Tong, Tian and Ma, Cong and Chi, Yuejie},
+  journal   = {IEEE Transactions on Signal Processing},
+  title     = {Low-Rank Matrix Recovery With Scaled Subgradient Methods: Fast and Robust Convergence Without the Condition Number},
+  year      = {2021},
+  issn      = {1941-0476},
+  pages     = {2396--2409},
+  volume    = {69},
+  doi       = {10.1109/tsp.2021.3071560},
+  groups    = {Scaled GD, Non-smooth},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{tong2021accelerating,
+  author        = {Tian Tong and Cong Ma and Yuejie Chi},
+  journal       = {Journal of Machine Learning Research},
+  title         = {Accelerating Ill-Conditioned Low-Rank Matrix Estimation via Scaled Gradient Descent},
+  year          = {2020},
+  month         = may,
+  abstract      = {Low-rank matrix estimation is a canonical problem that finds numerous applications in signal processing, machine learning and imaging science. A popular approach in practice is to factorize the matrix into two compact low-rank factors, and then optimize these factors directly via simple iterative methods such as gradient descent and alternating minimization. Despite nonconvexity, recent literatures have shown that these simple heuristics in fact achieve linear convergence when initialized properly for a growing number of problems of interest. However, upon closer examination, existing approaches can still be computationally expensive especially for ill-conditioned matrices: the convergence rate of gradient descent depends linearly on the condition number of the low-rank matrix, while the per-iteration cost of alternating minimization is often prohibitive for large matrices. The goal of this paper is to set forth a competitive algorithmic approach dubbed Scaled Gradient Descent (ScaledGD) which can be viewed as pre-conditioned or diagonally-scaled gradient descent, where the pre-conditioners are adaptive and iteration-varying with a minimal computational overhead. With tailored variants for low-rank matrix sensing, robust principal component analysis and matrix completion, we theoretically show that ScaledGD achieves the best of both worlds: it converges linearly at a rate independent of the condition number of the low-rank matrix similar as alternating minimization, while maintaining the low per-iteration cost of gradient descent. Our analysis is also applicable to general loss functions that are restricted strongly convex and smooth over low-rank matrices. To the best of our knowledge, ScaledGD is the first algorithm that provably has such properties over a wide range of low-rank matrix estimation tasks.},
+  archiveprefix = {arXiv},
+  eprint        = {2005.08898},
+  file          = {:http\://arxiv.org/pdf/2005.08898v4:PDF},
+  groups        = {Scaled GD},
+  keywords      = {cs.LG, cs.IT, eess.SP, math.IT, math.OC, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{park2018finding,
+  author    = {Park, Dohyung and Kyrillidis, Anastasios and Caramanis, Constantine and Sanghavi, Sujay},
+  journal   = {SIAM Journal on Imaging Sciences},
+  title     = {Finding Low-Rank Solutions via Nonconvex Matrix Factorization, Efficiently and Provably},
+  year      = {2018},
+  issn      = {1936-4954},
+  month     = jan,
+  number    = {4},
+  pages     = {2165--2204},
+  volume    = {11},
+  doi       = {10.1137/17m1150189},
+  publisher = {Society for Industrial & Applied Mathematics (SIAM)},
+}
+
+@Article{Chi2019,
+  author    = {Chi, Yuejie and Lu, Yue M. and Chen, Yuxin},
+  journal   = {IEEE Transactions on Signal Processing},
+  title     = {Nonconvex Optimization Meets Low-Rank Matrix Factorization: An Overview},
+  year      = {2019},
+  issn      = {1941-0476},
+  month     = oct,
+  number    = {20},
+  pages     = {5239--5269},
+  volume    = {67},
+  doi       = {10.1109/tsp.2019.2937282},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{Zhang2023,
+  author         = {Gavin Zhang and Salar Fattahi and Richard Y. Zhang},
+  journal        = {Journal of Machine Learning Research},
+  title          = {Preconditioned Gradient Descent for Overparameterized Nonconvex Burer--Monteiro Factorization with Global Optimality Certification},
+  year           = {2023},
+  number         = {163},
+  pages          = {1--55},
+  volume         = {24},
+  comment-kk2021 = {symmetric case.},
+  groups         = {Overparam},
+  url            = {http://jmlr.org/papers/v24/22-0882.html},
+}
+
+@Article{Xu2023,
+  author        = {Xingyu Xu and Yandi Shen and Yuejie Chi and Cong Ma},
+  title         = {The Power of Preconditioning in Overparameterized Low-Rank Matrix Sensing},
+  year          = {2023},
+  month         = feb,
+  abstract      = {We propose $\textsf{ScaledGD($\lambda$)}$, a preconditioned gradient descent method to tackle the low-rank matrix sensing problem when the true rank is unknown, and when the matrix is possibly ill-conditioned. Using overparametrized factor representations, $\textsf{ScaledGD($\lambda$)}$ starts from a small random initialization, and proceeds by gradient descent with a specific form of damped preconditioning to combat bad curvatures induced by overparameterization and ill-conditioning. At the expense of light computational overhead incurred by preconditioners, $\textsf{ScaledGD($\lambda$)}$ is remarkably robust to ill-conditioning compared to vanilla gradient descent ($\textsf{GD}$) even with overprameterization. Specifically, we show that, under the Gaussian design, $\textsf{ScaledGD($\lambda$)}$ converges to the true low-rank matrix at a constant linear rate after a small number of iterations that scales only logarithmically with respect to the condition number and the problem dimension. This significantly improves over the convergence rate of vanilla $\textsf{GD}$ which suffers from a polynomial dependency on the condition number. Our work provides evidence on the power of preconditioning in accelerating the convergence without hurting generalization in overparameterized learning.},
+  archiveprefix = {arXiv},
+  eprint        = {2302.01186},
+  file          = {:http\://arxiv.org/pdf/2302.01186v3:PDF},
+  groups        = {Scaled GD, Overparam},
+  keywords      = {cs.LG, eess.SP, math.OC, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{Zhang2021,
+  author    = {Zhang, Jialun and Fattahi, Salar and Zhang, Richard Y},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Preconditioned Gradient Descent for Over-Parameterized Nonconvex Matrix Factorization},
+  year      = {2021},
+  editor    = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+  pages     = {5985--5996},
+  publisher = {Curran Associates, Inc.},
+  volume    = {34},
+  groups    = {Overparam},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2021/file/2f2cd5c753d3cee48e47dbb5bbaed331-Paper.pdf},
+}
+
+@Article{Charisopoulos2019,
+  author        = {Vasileios Charisopoulos and Yudong Chen and Damek Davis and Mateo Díaz and Lijun Ding and Dmitriy Drusvyatskiy},
+  title         = {Low-rank matrix recovery with composite optimization: good conditioning and rapid convergence},
+  year          = {2019},
+  month         = apr,
+  abstract      = {The task of recovering a low-rank matrix from its noisy linear measurements plays a central role in computational science. Smooth formulations of the problem often exhibit an undesirable phenomenon: the condition number, classically defined, scales poorly with the dimension of the ambient space. In contrast, we here show that in a variety of concrete circumstances, nonsmooth penalty formulations do not suffer from the same type of ill-conditioning. Consequently, standard algorithms for nonsmooth optimization, such as subgradient and prox-linear methods, converge at a rapid dimension-independent rate when initialized within constant relative error of the solution. Moreover, nonsmooth formulations are naturally robust against outliers. Our framework subsumes such important computational tasks as phase retrieval, blind deconvolution, quadratic sensing, matrix completion, and robust PCA. Numerical experiments on these problems illustrate the benefits of the proposed approach.},
+  archiveprefix = {arXiv},
+  eprint        = {1904.10020},
+  file          = {:http\://arxiv.org/pdf/1904.10020v1:PDF},
+  groups        = {Non-smooth},
+  keywords      = {math.OC, cs.LG, 65K10, 90C06},
+  primaryclass  = {math.OC},
+}
+
+@Article{Shen2023,
+  author        = {Yinan Shen and Dong Xia},
+  title         = {Quantile and pseudo-Huber Tensor Decomposition},
+  year          = {2023},
+  month         = sep,
+  abstract      = {This paper studies the computational and statistical aspects of quantile and pseudo-Huber tensor decomposition. The integrated investigation of computational and statistical issues of robust tensor decomposition poses challenges due to the non-smooth loss functions. We propose a projected sub-gradient descent algorithm for tensor decomposition, equipped with either the pseudo-Huber loss or the quantile loss. In the presence of both heavy-tailed noise and Huber's contamination error, we demonstrate that our algorithm exhibits a so-called phenomenon of two-phase convergence with a carefully chosen step size schedule. The algorithm converges linearly and delivers an estimator that is statistically optimal with respect to both the heavy-tailed noise and arbitrary corruptions. Interestingly, our results achieve the first minimax optimal rates under Huber's contamination model for noisy tensor decomposition. Compared with existing literature, quantile tensor decomposition removes the requirement of specifying a sparsity level in advance, making it more flexible for practical use. We also demonstrate the effectiveness of our algorithms in the presence of missing values. Our methods are subsequently applied to the food balance dataset and the international trade flow dataset, both of which yield intriguing findings.},
+  archiveprefix = {arXiv},
+  eprint        = {2309.02698},
+  file          = {:http\://arxiv.org/pdf/2309.02698v1:PDF},
+  groups        = {Non-smooth, RiemannianGD},
+  keywords      = {math.ST, cs.IT, math.IT, stat.ME, stat.TH},
+  primaryclass  = {math.ST},
+}
+
+@Article{Shen2022,
+  author        = {Yinan Shen and Jingyang Li and Jian-Feng Cai and Dong Xia},
+  title         = {Computationally Efficient and Statistically Optimal Robust Low-rank Matrix and Tensor Estimation},
+  year          = {2022},
+  month         = mar,
+  abstract      = {Low-rank matrix estimation under heavy-tailed noise is challenging, both computationally and statistically. Convex approaches have been proven statistically optimal but suffer from high computational costs, especially since robust loss functions are usually non-smooth. More recently, computationally fast non-convex approaches via sub-gradient descent are proposed, which, unfortunately, fail to deliver a statistically consistent estimator even under sub-Gaussian noise. In this paper, we introduce a novel Riemannian sub-gradient (RsGrad) algorithm which is not only computationally efficient with linear convergence but also is statistically optimal, be the noise Gaussian or heavy-tailed. Convergence theory is established for a general framework and specific applications to absolute loss, Huber loss, and quantile loss are investigated. Compared with existing non-convex methods, ours reveals a surprising phenomenon of dual-phase convergence. In phase one, RsGrad behaves as in a typical non-smooth optimization that requires gradually decaying stepsizes. However, phase one only delivers a statistically sub-optimal estimator which is already observed in the existing literature. Interestingly, during phase two, RsGrad converges linearly as if minimizing a smooth and strongly convex objective function and thus a constant stepsize suffices. Underlying the phase-two convergence is the smoothing effect of random noise to the non-smooth robust losses in an area close but not too close to the truth. Lastly, RsGrad is applicable for low-rank tensor estimation under heavy-tailed noise where a statistically optimal rate is attainable with the same phenomenon of dual-phase convergence, and a novel shrinkage-based second-order moment method is guaranteed to deliver a warm initialization. Numerical simulations confirm our theoretical discovery and showcase the superiority of RsGrad over prior methods.},
+  archiveprefix = {arXiv},
+  eprint        = {2203.00953},
+  file          = {:http\://arxiv.org/pdf/2203.00953v4:PDF},
+  groups        = {Non-smooth, RiemannianGD},
+  keywords      = {math.ST, cs.IT, math.IT, stat.ME, stat.ML, stat.TH},
+  primaryclass  = {math.ST},
+}
+
+@Article{Cai2022,
+  author    = {Cai, Jian-Feng and Li, Jingyang and Xia, Dong},
+  journal   = {Journal of the American Statistical Association},
+  title     = {Generalized Low-Rank Plus Sparse Tensor Estimation by Fast Riemannian Optimization},
+  year      = {2022},
+  issn      = {1537-274X},
+  month     = may,
+  number    = {544},
+  pages     = {2588--2604},
+  volume    = {118},
+  doi       = {10.1080/01621459.2022.2063131},
+  groups    = {RiemannianGD},
+  publisher = {Informa UK Limited},
+}
+
+@Article{horowitz1998bootstrap,
+  author    = {Horowitz, Joel L},
+  journal   = {Econometrica},
+  title     = {Bootstrap methods for median regression models},
+  year      = {1998},
+  pages     = {1327--1351},
+  groups    = {SmoothQR},
+  publisher = {JSTOR},
+}
+
+@Article{Whang2006,
+  author    = {Whang, Yoon-Jae},
+  journal   = {Econometric Theory},
+  title     = {Smoothed Empirical Likelihood Methods for Quantile Regression Models},
+  year      = {2006},
+  issn      = {1469-4360},
+  month     = feb,
+  number    = {02},
+  volume    = {22},
+  doi       = {10.1017/s0266466606060087},
+  groups    = {SmoothQR},
+  publisher = {Cambridge University Press (CUP)},
+}
+
+@Article{Kaplan2016,
+  author    = {Kaplan, David M. and Sun, Yixiao},
+  journal   = {Econometric Theory},
+  title     = {Smoothed Estimating Equations for Instrumental Variables Quantile Regression},
+  year      = {2016},
+  issn      = {1469-4360},
+  month     = jan,
+  number    = {1},
+  pages     = {105--157},
+  volume    = {33},
+  doi       = {10.1017/s0266466615000407},
+  groups    = {SmoothQR},
+  publisher = {Cambridge University Press (CUP)},
+}
+
+@Article{Fernandes2019,
+  author    = {Fernandes, Marcelo and Guerre, Emmanuel and Horta, Eduardo},
+  journal   = {Journal of Business &amp; Economic Statistics},
+  title     = {Smoothing Quantile Regressions},
+  year      = {2019},
+  issn      = {1537-2707},
+  month     = oct,
+  number    = {1},
+  pages     = {338--357},
+  volume    = {39},
+  doi       = {10.1080/07350015.2019.1660177},
+  groups    = {SmoothQR},
+  publisher = {Informa UK Limited},
+}
+
+@Article{he2021smoothed,
+  author    = {He, Xuming and Pan, Xiaoou and Tan, Kean Ming and Zhou, Wen-Xin},
+  journal   = {Journal of Econometrics},
+  title     = {Smoothed quantile regression with large-scale inference},
+  year      = {2023},
+  issn      = {0304-4076},
+  month     = feb,
+  number    = {2},
+  pages     = {367--388},
+  volume    = {232},
+  doi       = {10.1016/j.jeconom.2021.07.010},
+  groups    = {SmoothQR, Conquer},
+  publisher = {Elsevier BV},
+}
+
+@Article{tan2022high,
+  author    = {Tan, Kean Ming and Wang, Lan and Zhou, Wen-Xin},
+  journal   = {Journal of the Royal Statistical Society Series B: Statistical Methodology},
+  title     = {High-Dimensional Quantile Regression: Convolution Smoothing and Concave Regularization},
+  year      = {2021},
+  issn      = {1467-9868},
+  month     = dec,
+  number    = {1},
+  pages     = {205--233},
+  volume    = {84},
+  doi       = {10.1111/rssb.12485},
+  groups    = {Conquer, SmoothQR},
+  publisher = {Oxford University Press (OUP)},
+}
+
+@Article{Fernandes2019,
+  author    = {Fernandes, Marcelo and Guerre, Emmanuel and Horta, Eduardo},
+  journal   = {Journal of Business \& Economic Statistics},
+  title     = {Smoothing Quantile Regressions},
+  year      = {2019},
+  month     = {10},
+  number    = {1},
+  pages     = {338-357},
+  volume    = {39},
+  date      = {2019-10-04},
+  day       = {4},
+  doi       = {10.1080/07350015.2019.1660177},
+  publisher = {Informa UK Limited},
+}
+
+@Article{Nesterov_2004,
+  author    = {Nesterov, Yu.},
+  journal   = {Mathematical Programming},
+  title     = {Smooth minimization of non-smooth functions},
+  year      = {2004},
+  issn      = {1436-4646},
+  month     = dec,
+  number    = {1},
+  pages     = {127--152},
+  volume    = {103},
+  doi       = {10.1007/s10107-004-0552-5},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Tu2015,
+  author        = {Stephen Tu and Ross Boczar and Max Simchowitz and Mahdi Soltanolkotabi and Benjamin Recht},
+  title         = {Low-rank Solutions of Linear Matrix Equations via Procrustes Flow},
+  year          = {2015},
+  month         = jul,
+  abstract      = {In this paper we study the problem of recovering a low-rank matrix from linear measurements. Our algorithm, which we call Procrustes Flow, starts from an initial estimate obtained by a thresholding scheme followed by gradient descent on a non-convex objective. We show that as long as the measurements obey a standard restricted isometry property, our algorithm converges to the unknown matrix at a geometric rate. In the case of Gaussian measurements, such convergence occurs for a $n_1 \times n_2$ matrix of rank $r$ when the number of measurements exceeds a constant times $(n_1+n_2)r$.},
+  archiveprefix = {arXiv},
+  eprint        = {1507.03566},
+  file          = {:http\://arxiv.org/pdf/1507.03566v2:PDF},
+  keywords      = {math.OC},
+  primaryclass  = {math.OC},
+}
+
+@Book{刘浩洋2020最优化,
+  author    = {刘浩洋},
+  publisher = {高等教育出版社},
+  title     = {最优化: 建模, 算法与理论},
+  year      = {2020},
+}
+
+
+@article{chen2015exact,
+  title={Exact and stable covariance estimation from quadratic sampling via convex programming},
+  author={Chen, Yuxin and Chi, Yuejie and Goldsmith, Andrea J},
+  journal={IEEE Transactions on Information Theory},
+  volume={61},
+  number={7},
+  pages={4034--4059},
+  year={2015},
+  publisher={IEEE}
+}
+
+
+@inproceedings{fazel2008compressed,
+  title={Compressed sensing and robust recovery of low rank matrices},
+  author={Fazel, Maryam and Cand{\`e}s, Emmanuel and Recht, Ben and Parrilo, Pablo},
+  booktitle={2008 42nd Asilomar Conference on Signals, Systems and Computers},
+  pages={1043--1047},
+  year={2008},
+  organization={IEEE}
+}
+
+
+@article{recht2010guaranteed,
+  title={Guaranteed minimum-rank solutions of linear matrix equations via nuclear norm minimization},
+  author={Recht, Benjamin and Fazel, Maryam and Parrilo, Pablo A},
+  journal={SIAM review},
+  volume={52},
+  number={3},
+  pages={471--501},
+  year={2010},
+  publisher={SIAM}
+}
+
+@Article{Luo2021,
+  author        = {Yuetian Luo and Anru R. Zhang},
+  title         = {Low-rank Tensor Estimation via Riemannian Gauss-Newton: Statistical Optimality and Second-Order Convergence},
+  year          = {2021},
+  month         = apr,
+  abstract      = {In this paper, we consider the estimation of a low Tucker rank tensor from a number of noisy linear measurements. The general problem covers many specific examples arising from applications, including tensor regression, tensor completion, and tensor PCA/SVD. We consider an efficient Riemannian Gauss-Newton (RGN) method for low Tucker rank tensor estimation. Different from the generic (super)linear convergence guarantee of RGN in the literature, we prove the first local quadratic convergence guarantee of RGN for low-rank tensor estimation in the noisy setting under some regularity conditions and provide the corresponding estimation error upper bounds. A deterministic estimation error lower bound, which matches the upper bound, is provided that demonstrates the statistical optimality of RGN. The merit of RGN is illustrated through two machine learning applications: tensor regression and tensor SVD. Finally, we provide the simulation results to corroborate our theoretical findings.},
+  archiveprefix = {arXiv},
+  eprint        = {2104.12031},
+  file          = {:Luo2021 - Low Rank Tensor Estimation Via Riemannian Gauss Newton_ Statistical Optimality and Second Order Convergence.pdf:PDF},
+  groups        = {RiemannianGD},
+  keywords      = {stat.ML, cs.LG, cs.NA, math.NA, math.OC, stat.ME},
+  primaryclass  = {stat.ML},
+}
+
+@Book{Wainwright2019,
+  author    = {Wainwright, Martin J.},
+  publisher = {Cambridge University Press},
+  title     = {High-Dimensional Statistics: A Non-Asymptotic Viewpoint},
+  year      = {2019},
+  isbn      = {9781108498029},
+  month     = feb,
+  doi       = {10.1017/9781108627771},
+}
+
+@Article{Adamczak2008,
+  author    = {Adamczak, Radoslaw},
+  journal   = {Electronic Journal of Probability},
+  title     = {A tail inequality for suprema of unbounded empirical processes with applications to Markov chains},
+  year      = {2008},
+  issn      = {1083-6489},
+  month     = jan,
+  number    = {none},
+  volume    = {13},
+  doi       = {10.1214/ejp.v13-521},
+  groups    = {Concentration},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{mendelson2010empirical,
+  author    = {Mendelson, Shahar},
+  journal   = {Geometric and Functional Analysis},
+  title     = {Empirical processes with a bounded $\psi$ 1 diameter},
+  year      = {2010},
+  number    = {4},
+  pages     = {988--1027},
+  volume    = {20},
+  groups    = {Concentration},
+  publisher = {Springer},
+}
+
+@InBook{Vaart2023,
+  author    = {Vaart, A. W. van der and Wellner, Jon A.},
+  pages     = {127--384},
+  publisher = {Springer International Publishing},
+  title     = {Empirical Processes},
+  year      = {2023},
+  address   = {Cham},
+  isbn      = {978-3-031-29040-4},
+  booktitle = {Weak Convergence and Empirical Processes: With Applications to Statistics},
+  doi       = {10.1007/978-3-031-29040-4_2},
+  groups    = {Concentration},
+  url       = {https://doi.org/10.1007/978-3-031-29040-4_2},
+}
+
+@Article{Chernozhukov2017,
+  author    = {Chernozhukov, Victor and Chetverikov, Denis and Kato, Kengo},
+  journal   = {The Annals of Probability},
+  title     = {Central limit theorems and bootstrap in high dimensions},
+  year      = {2017},
+  issn      = {0091-1798},
+  month     = jul,
+  number    = {4},
+  volume    = {45},
+  doi       = {10.1214/16-aop1113},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{zhang2020concentration,
+  author  = {Zhang, Huiming and Chen, Song Xi},
+  journal = {arXiv preprint arXiv:2011.02258},
+  title   = {Concentration inequalities for statistical inference},
+  year    = {2020},
+}
+
+@InProceedings{Bousquet2003,
+  author    = {Bousquet, Olivier},
+  booktitle = {Stochastic Inequalities and Applications},
+  title     = {Concentration Inequalities for Sub-Additive Functions Using the Entropy Method},
+  year      = {2003},
+  address   = {Basel},
+  editor    = {Gin{\'e}, Evariste and Houdr{\'e}, Christian and Nualart, David},
+  pages     = {213--247},
+  publisher = {Birkh{\"a}user Basel},
+  abstract  = {We obtain exponential concentration inequalities for sub-additive functions of independent random variables under weak conditions on the increments of those functions, like the existence of exponential moments for these increments. As a consequence of these general inequalities, we obtain refinements of Talagrand's inequality for empirical processes and new bounds for randomized processes associated to unbounded random variables. These results are obtained by further developing the entropy method introduced by Ledoux.},
+  isbn      = {978-3-0348-8069-5},
+}
+
+@Book{Boucheron2013,
+  author    = {Boucheron, Stéphane and Lugosi, Gábor and Massart, Pascal},
+  publisher = {Oxford University Press},
+  title     = {Concentration Inequalities: A Nonasymptotic Theory of Independence},
+  year      = {2013},
+  isbn      = {9780199535255},
+  month     = {02},
+  abstract  = {{This monograph presents a mathematical theory of concentration inequalities for functions of independent random variables. The basic phenomenon under investigation is that if a function of many independent random variables does not depend too much on any of them then it is concentrated around its expected value. This book offers a host of inequalities to quantify this statement. The authors describe the interplay between the probabilistic structure (independence) and a variety of tools ranging from functional inequalities, transportation arguments, to information theory. Applications to the study of empirical processes, random projections, random matrix theory, and threshold phenomena are presented. The book offers a self-contained introduction to concentration inequalities, including a survey of concentration of sums of independent random variables, variance bounds, the entropy method, and the transportation method. Deep connections with isoperimetric problems are revealed. Special attention is paid to applications to the supremum of empirical processes.}},
+  doi       = {10.1093/acprof:oso/9780199535255.001.0001},
+  groups    = {Concentration},
+  url       = {https://doi.org/10.1093/acprof:oso/9780199535255.001.0001},
+}
+
+@online{mathexchange,
+	title={Upper Bound of Expected Maximum of Weighted Sub-Gaussian R.V.s},
+	author={Author Name},
+	year={2018},
+	url={https://math.stackexchange.com/questions/3039181/upper-bound-of-expected-maximum-of-weighted-sub-gaussian-r-v-s/3182844#3182844},
+}
+
+@online{mitocw,
+	title={High Dimensional Statistics - Lecture Notes},
+	author={MIT OpenCourseWare},
+	year={2015},
+	url={https://ocw.mit.edu/courses/18-s997-high-dimensional-statistics-spring-2015/a69e2f53bb2eeb9464520f3027fc61e6_MIT18_S997S15_Chapter1.pdf},
+}
+
+@Book{Vershynin2018,
+  author     = {Vershynin, Roman},
+  publisher  = {Cambridge University Press},
+  title      = {High-Dimensional Probability: An Introduction with Applications in Data Science},
+  year       = {2018},
+  series     = {Cambridge Series in Statistical and Probabilistic Mathematics},
+  collection = {Cambridge Series in Statistical and Probabilistic Mathematics},
+  place      = {Cambridge},
+}
+
+@Article{Negahban2011,
+  author    = {Negahban, Sahand and Wainwright, Martin J.},
+  journal   = {The Annals of Statistics},
+  title     = {Estimation of (near) low-rank matrices with noise and high-dimensional scaling},
+  year      = {2011},
+  issn      = {0090-5364},
+  month     = apr,
+  number    = {2},
+  volume    = {39},
+  doi       = {10.1214/10-aos850},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{Sun2018,
+  author    = {Sun, Tianxiao and Tran-Dinh, Quoc},
+  journal   = {Mathematical Programming},
+  title     = {Generalized self-concordant functions: a recipe for Newton-type methods},
+  year      = {2018},
+  issn      = {1436-4646},
+  month     = may,
+  number    = {1–2},
+  pages     = {145--213},
+  volume    = {178},
+  doi       = {10.1007/s10107-018-1282-4},
+  groups    = {self-concordent},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Bach2010,
+  author    = {Bach, Francis},
+  journal   = {Electronic Journal of Statistics},
+  title     = {Self-concordant analysis for logistic regression},
+  year      = {2010},
+  issn      = {1935-7524},
+  month     = jan,
+  number    = {none},
+  volume    = {4},
+  doi       = {10.1214/09-ejs521},
+  groups    = {self-concordent},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Online{bach_blog1,
+  author  = {Bach, Francis},
+  groups  = {self-concordent},
+  title   = {Self-Concordant Analysis of Newton's Method},
+  url     = {https://francisbach.com/self-concordant-analysis-newton/},
+  urldate = {2021-02-01},
+  year    = {2021},
+}
+
+@Online{bach_blog2,
+  author = {Bach, Francis},
+  groups = {self-concordent},
+  title  = {Self-Concordant Analysis for Logistic Regression},
+  url    = {https://francisbach.com/self-concordant-analysis-for-logistic-regression/},
+  year   = {2021},
+}
+
+@Article{zhang2018communication,
+  author    = {Zhang, Yuchen and Xiao, Lin},
+  journal   = {Large-Scale and Distributed Optimization},
+  title     = {Communication-efficient distributed optimization of self-concordant empirical loss},
+  year      = {2018},
+  pages     = {289--341},
+  groups    = {self-concordent},
+  publisher = {Springer},
+}
+
+@InProceedings{zhang2015disco,
+  author       = {Zhang, Yuchen and Lin, Xiao},
+  booktitle    = {International conference on machine learning},
+  title        = {Disco: Distributed optimization for self-concordant empirical loss},
+  year         = {2015},
+  organization = {PMLR},
+  pages        = {362--370},
+  groups       = {self-concordent},
+}
+
+@Article{Ostrovskii2021,
+  author    = {Ostrovskii, Dmitrii M. and Bach, Francis},
+  journal   = {Electronic Journal of Statistics},
+  title     = {Finite-sample analysis of $M$-estimators using self-concordance},
+  year      = {2021},
+  issn      = {1935-7524},
+  month     = jan,
+  number    = {1},
+  volume    = {15},
+  doi       = {10.1214/20-ejs1780},
+  groups    = {self-concordent},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Book{boyd2004convex,
+  author    = {Boyd, Stephen P and Vandenberghe, Lieven},
+  publisher = {Cambridge university press},
+  title     = {Convex optimization},
+  year      = {2004},
+}
+
+@Book{nesterov2018lectures,
+  author    = {Nesterov, Yurii and others},
+  publisher = {Springer},
+  title     = {Lectures on convex optimization},
+  year      = {2018},
+  volume    = {137},
+}
+
+@Article{owen2013self,
+  author    = {Owen, Art B},
+  journal   = {Canadian Journal of Statistics},
+  title     = {Self-concordance for empirical likelihood},
+  year      = {2013},
+  number    = {3},
+  pages     = {387--397},
+  volume    = {41},
+  publisher = {Wiley Online Library},
+}
+
+@Article{candes2011tight,
+  author    = {Candes, Emmanuel J and Plan, Yaniv},
+  journal   = {IEEE Transactions on Information Theory},
+  title     = {Tight oracle inequalities for low-rank matrix recovery from a minimal number of noisy random measurements},
+  year      = {2011},
+  number    = {4},
+  pages     = {2342--2359},
+  volume    = {57},
+  publisher = {IEEE},
+}
+
+@Article{jia2024preconditioning,
+  author  = {Jia, Xixi and Wang, Hailin and Peng, Jiangjun and Feng, Xiangchu and Meng, Deyu},
+  journal = {Advances in Neural Information Processing Systems},
+  title   = {Preconditioning Matters: Fast Global Convergence of Non-convex Matrix Factorization via Scaled Gradient Descent},
+  year    = {2024},
+  volume  = {36},
+  groups  = {precondition},
+}
+
+@InProceedings{ma2018implicit,
+  author       = {Ma, Cong and Wang, Kaizheng and Chi, Yuejie and Chen, Yuxin},
+  booktitle    = {International Conference on Machine Learning},
+  title        = {Implicit regularization in nonconvex statistical estimation: Gradient descent converges linearly for phase retrieval and matrix completion},
+  year         = {2018},
+  organization = {PMLR},
+  pages        = {3345--3354},
+}
+
+
+@Article{li2020nonconvex,
+  author    = {Li, Xiao and Zhu, Zhihui and Man-Cho So, Anthony and Vidal, Rene},
+  journal   = {SIAM Journal on Optimization},
+  title     = {Nonconvex robust low-rank matrix recovery},
+  year      = {2020},
+  number    = {1},
+  pages     = {660--686},
+  volume    = {30},
+  groups    = {RIP},
+  publisher = {SIAM},
+}
+
+@Article{ma2021sign,
+  author  = {Ma, Jianhao and Fattahi, Salar},
+  journal = {arXiv preprint arXiv:2102.02969},
+  title   = {Sign-rip: A robust restricted isometry property for low-rank matrix recovery},
+  year    = {2021},
+  groups  = {RIP},
+}
+
+@Article{ma2023global,
+  author  = {Ma, Jianhao and Fattahi, Salar},
+  journal = {Journal of Machine Learning Research},
+  title   = {Global convergence of sub-gradient method for robust matrix recovery: Small initialization, noisy measurements, and over-parameterization},
+  year    = {2023},
+  number  = {96},
+  pages   = {1--84},
+  volume  = {24},
+  groups  = {RIP},
+}
+
+@Article{zhang2021preconditioned,
+  author  = {Zhang, Jialun and Fattahi, Salar and Zhang, Richard Y},
+  journal = {Advances in Neural Information Processing Systems},
+  title   = {Preconditioned gradient descent for over-parameterized nonconvex matrix factorization},
+  year    = {2021},
+  pages   = {5985--5996},
+  volume  = {34},
+}
+
+@Article{zhang2023preconditioned,
+  author  = {Zhang, Gavin and Fattahi, Salar and Zhang, Richard Y},
+  journal = {Journal of Machine Learning Research},
+  title   = {Preconditioned Gradient Descent for Overparameterized Nonconvex Burer--Monteiro Factorization with Global Optimality Certification},
+  year    = {2023},
+  number  = {163},
+  pages   = {1--55},
+  volume  = {24},
+}
+
+@Article{xia2021statistical,
+  author    = {Xia, Dong and Yuan, Ming},
+  journal   = {Journal of the Royal Statistical Society Series B: Statistical Methodology},
+  title     = {Statistical inferences of linear forms for noisy matrix completion},
+  year      = {2021},
+  number    = {1},
+  pages     = {58--77},
+  volume    = {83},
+  groups    = {Matrix Inference},
+  publisher = {Oxford University Press},
+}
+
+@Article{chen2019inference,
+  author    = {Chen, Yuxin and Fan, Jianqing and Ma, Cong and Yan, Yuling},
+  journal   = {Proceedings of the National Academy of Sciences},
+  title     = {Inference and uncertainty quantification for noisy matrix completion},
+  year      = {2019},
+  number    = {46},
+  pages     = {22931--22937},
+  volume    = {116},
+  groups    = {Matrix Inference},
+  publisher = {National Acad Sciences},
+}
+
+@Article{xiong2023large,
+  author    = {Xiong, Ruoxuan and Pelger, Markus},
+  journal   = {Journal of Econometrics},
+  title     = {Large dimensional latent factor modeling with missing observations and applications to causal inference},
+  year      = {2023},
+  number    = {1},
+  pages     = {271--301},
+  volume    = {233},
+  groups    = {Matrix Inference},
+  publisher = {Elsevier},
+}
+
+@Article{jin2021factor,
+  author    = {Jin, Sainan and Miao, Ke and Su, Liangjun},
+  journal   = {Journal of Econometrics},
+  title     = {On factor models with random missing: Em estimation, inference, and cross validation},
+  year      = {2021},
+  number    = {1},
+  pages     = {745--777},
+  volume    = {222},
+  groups    = {Matrix Inference},
+  publisher = {Elsevier},
+}
+
+@Article{chernozhukov2023inference,
+  author    = {Chernozhukov, Victor and Hansen, Christian and Liao, Yuan and Zhu, Yinchu},
+  journal   = {The Annals of statistics},
+  title     = {Inference for low-rank models},
+  year      = {2023},
+  number    = {3},
+  pages     = {1309--1330},
+  volume    = {51},
+  groups    = {Matrix Inference},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{choi2024inference,
+  author    = {Choi, Jungjun and Kwon, Hyukjun and Liao, Yuan},
+  journal   = {Journal of Econometrics},
+  title     = {Inference for low-rank completion without sample splitting with application to treatment effect estimation},
+  year      = {2024},
+  number    = {1},
+  pages     = {105682},
+  volume    = {240},
+  groups    = {Matrix Inference},
+  publisher = {Elsevier},
+}
+
+@Article{chen2020noisy,
+  author    = {Chen, Yuxin and Chi, Yuejie and Fan, Jianqing and Ma, Cong and Yan, Yuling},
+  journal   = {SIAM journal on optimization},
+  title     = {Noisy matrix completion: Understanding statistical guarantees for convex relaxation via nonconvex optimization},
+  year      = {2020},
+  number    = {4},
+  pages     = {3098--3121},
+  volume    = {30},
+  groups    = {Matrix Inference},
+  publisher = {SIAM},
+}
+
+@Article{cai2023statistical,
+  author    = {Cai, T Tony and Guo, Zijian and Ma, Rong},
+  journal   = {Journal of the American Statistical Association},
+  title     = {Statistical inference for high-dimensional generalized linear models with binary outcomes},
+  year      = {2023},
+  number    = {542},
+  pages     = {1319--1332},
+  volume    = {118},
+  groups    = {debias},
+  publisher = {Taylor \& Francis},
+}
+
+@Article{xia2020revisit,
+  author  = {Xia, Lu and Nan, Bin and Li, Yi},
+  journal = {arXiv preprint arXiv:2006.12778},
+  title   = {A revisit to de-biased lasso for generalized linear models},
+  year    = {2020},
+  groups  = {debias},
+}
+
+
+@Article{Ning2017,
+	author    = {Ning, Yang and Liu, Han},
+	journal   = {The Annals of Statistics},
+	title     = {A general theory of hypothesis tests and confidence regions for sparse high dimensional models},
+	year      = {2017},
+	issn      = {0090-5364},
+	month     = feb,
+	number    = {1},
+	volume    = {45},
+	doi       = {10.1214/16-aos1448},
+	publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{javanmard2014confidence,
+  author    = {Javanmard, Adel and Montanari, Andrea},
+  journal   = {The Journal of Machine Learning Research},
+  title     = {Confidence intervals and hypothesis testing for high-dimensional regression},
+  year      = {2014},
+  number    = {1},
+  pages     = {2869--2909},
+  volume    = {15},
+  groups    = {debias},
+  publisher = {JMLR. org},
+}
+
+@Article{zhang2014confidence,
+  author    = {Zhang, Cun-Hui and Zhang, Stephanie S},
+  journal   = {Journal of the Royal Statistical Society Series B: Statistical Methodology},
+  title     = {Confidence intervals for low dimensional parameters in high dimensional linear models},
+  year      = {2014},
+  number    = {1},
+  pages     = {217--242},
+  volume    = {76},
+  groups    = {debias},
+  publisher = {Oxford University Press},
+}
+
+@Article{van2014asymptotically,
+  author = {Van de Geer, Sara and B{\"u}hlmann, Peter and Ritov, Ya’acov and Dezeure, Ruben},
+  title  = {On asymptotically optimal confidence regions and tests for high-dimensional models},
+  year   = {2014},
+  journal = {Annals of statistics},
+  groups = {debias},
+}
+
+@Article{xia2022inference,
+  author    = {Xia, Dong and Zhang, Anru R and Zhou, Yuchen},
+  journal   = {The Annals of Statistics},
+  title     = {Inference for low-rank tensors—no need to debias},
+  year      = {2022},
+  number    = {2},
+  pages     = {1220--1245},
+  volume    = {50},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{lu2023sparse,
+  author    = {Lu, Wenqi and Zhu, Zhongyi and Lian, Heng},
+  journal   = {Statistica Sinica},
+  title     = {Sparse and low-rank matrix quantile estimation with application to quadratic regression},
+  year      = {2023},
+  number    = {2},
+  pages     = {945--959},
+  volume    = {33},
+  publisher = {Academia Sinica* Institute of Statistical Science},
+}
+
+@Article{fan2021shrinkage,
+  author    = {Fan, Jianqing and Wang, Weichen and Zhu, Ziwei},
+  journal   = {Annals of statistics},
+  title     = {A shrinkage principle for heavy-tailed data: High-dimensional robust low-rank matrix recovery},
+  year      = {2021},
+  number    = {3},
+  pages     = {1239},
+  volume    = {49},
+  publisher = {NIH Public Access},
+}
+
+@Article{chen2021spectral,
+  author    = {Chen, Yuxin and Chi, Yuejie and Fan, Jianqing and Ma, Cong and others},
+  journal   = {Foundations and Trends{\textregistered} in Machine Learning},
+  title     = {Spectral methods for data science: A statistical perspective},
+  year      = {2021},
+  number    = {5},
+  pages     = {566--806},
+  volume    = {14},
+  publisher = {Now Publishers, Inc.},
+}
+
+@Article{fan2019distributed,
+  author    = {Fan, Jianqing and Wang, Dong and Wang, Kaizheng and Zhu, Ziwei},
+  journal   = {Annals of statistics},
+  title     = {Distributed estimation of principal eigenspaces},
+  year      = {2019},
+  number    = {6},
+  pages     = {3009},
+  volume    = {47},
+  publisher = {NIH Public Access},
+}
+
+@Article{chen2022distributed,
+  author    = {Chen, Xi and Lee, Jason D and Li, He and Yang, Yun},
+  journal   = {Journal of the American Statistical Association},
+  title     = {Distributed estimation for principal component analysis: An enlarged eigenspace analysis},
+  year      = {2022},
+  number    = {540},
+  pages     = {1775--1786},
+  volume    = {117},
+  publisher = {Taylor \& Francis},
+}
+
+@Article{fan2019generalized,
+  author    = {Fan, Jianqing and Gong, Wenyan and Zhu, Ziwei},
+  journal   = {Journal of econometrics},
+  title     = {Generalized high-dimensional trace regression via nuclear norm regularization},
+  year      = {2019},
+  number    = {1},
+  pages     = {177--202},
+  volume    = {212},
+  publisher = {Elsevier},
+}
+
+@Article{allen2016lazysvd,
+  author  = {Allen-Zhu, Zeyuan and Li, Yuanzhi},
+  journal = {Advances in neural information processing systems},
+  title   = {LazySVD: Even faster SVD decomposition yet without agonizing pain},
+  year    = {2016},
+  volume  = {29},
+}
+
+@Article{chen2024distributed,
+  author  = {Chen, Elynn and Chen, Xi and Jing, Wenbo and Zhang, Yichen},
+  journal = {arXiv preprint arXiv:2405.11681},
+  title   = {Distributed Tensor Principal Component Analysis},
+  year    = {2024},
+}
+
+@Article{Minsker2017,
+  author    = {Minsker, Stanislav},
+  journal   = {Statistics &amp; Probability Letters},
+  title     = {On some extensions of Bernstein’s inequality for self-adjoint operators},
+  year      = {2017},
+  issn      = {0167-7152},
+  month     = aug,
+  pages     = {111--119},
+  volume    = {127},
+  doi       = {10.1016/j.spl.2017.03.020},
+  publisher = {Elsevier BV},
+}
+
+
+@article{breheny2015group,
+  title={Group descent algorithms for nonconvex penalized linear and logistic regression models with grouped predictors},
+  author={Breheny, Patrick and Huang, Jian},
+  journal={Statistics and computing},
+  volume={25},
+  pages={173--187},
+  year={2015},
+  publisher={Springer}
+}
+
+
+@book{van1993approximation,
+  title={Approximation with Kronecker products},
+  author={Van Loan, Charles F and Pitsianis, Nikos},
+  year={1993},
+  publisher={Springer}
+}
+
+@article{guggenberger2023test,
+  title={A test for Kronecker product structure covariance matrix},
+  author={Guggenberger, Patrik and Kleibergen, Frank and Mavroeidis, Sophocles},
+  journal={Journal of Econometrics},
+  volume={233},
+  number={1},
+  pages={88--112},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@Article{Leng2018,
+  author       = {Leng, Chenlei and Pan, Guangming},
+  date         = {2018-11},
+  year          ={2018},
+  journal = {Bernoulli},
+  title        = {Covariance estimation via sparse Kronecker structures},
+  doi          = {10.3150/17-bej980},
+  issn         = {1350-7265},
+  number       = {4B},
+  volume       = {24},
+  publisher    = {Bernoulli Society for Mathematical Statistics and Probability},
+}
+
+@article{guggenberger2023test,
+  title={A test for Kronecker product structure covariance matrix},
+  author={Guggenberger, Patrik and Kleibergen, Frank and Mavroeidis, Sophocles},
+  journal={Journal of Econometrics},
+  volume={233},
+  number={1},
+  pages={88--112},
+  year={2023},
+  publisher={Elsevier}
+}
+
+@article{yan2024statistical,
+  title={Statistical Inference for Four-Regime Segmented Regression Models},
+  author={Yan, Han and Chen, Song Xi},
+  journal={arXiv preprint arXiv:2410.04384},
+  year={2024}
+}
+
+@Article{Li2018,
+  author    = {Li, Xiaoshan and Xu, Da and Zhou, Hua and Li, Lexin},
+  journal   = {Statistics in Biosciences},
+  title     = {Tucker Tensor Regression and Neuroimaging Analysis},
+  year      = {2018},
+  issn      = {1867-1772},
+  month     = mar,
+  number    = {3},
+  pages     = {520--545},
+  volume    = {10},
+  doi       = {10.1007/s12561-018-9215-6},
+  groups    = {Matrix GLM},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Zhou2013,
+  author    = {Zhou, Hua and Li, Lexin and Zhu, Hongtu},
+  journal   = {Journal of the American Statistical Association},
+  title     = {Tensor Regression with Applications in Neuroimaging Data Analysis},
+  year      = {2013},
+  issn      = {1537-274X},
+  month     = jun,
+  number    = {502},
+  pages     = {540--552},
+  volume    = {108},
+  doi       = {10.1080/01621459.2013.776499},
+  groups    = {Matrix GLM},
+  publisher = {Informa UK Limited},
+}
+
+@InProceedings{Taki2024,
+  author    = {Taki, Batoul and Sarwate, Anand D. and Bajwa, Waheed U.},
+  booktitle = {2024 58th Annual Conference on Information Sciences and Systems (CISS)},
+  title     = {Low Separation Rank in Tensor Generalized Linear Models: An Asymptotic Analysis},
+  year      = {2024},
+  month     = mar,
+  pages     = {1--6},
+  publisher = {IEEE},
+  doi       = {10.1109/ciss59072.2024.10480200},
+  groups    = {Matrix GLM},
+}
+
+@Article{Ke2023,
+  author    = {Ke, Baofang and Zhao, Weihua and Wang, Lei},
+  journal   = {Computational Statistics and Data Analysis},
+  title     = {Smoothed tensor quantile regression estimation for longitudinal data},
+  year      = {2023},
+  issn      = {0167-9473},
+  month     = feb,
+  pages     = {107609},
+  volume    = {178},
+  doi       = {10.1016/j.csda.2022.107609},
+  groups    = {Matrix GLM},
+  publisher = {Elsevier BV},
+}
+
+@Book{Chernozhukov2019,
+  author = {Chernozhukov, Victor and Hansen, Christian and Liao, Yuan and Zhu, Yinchu},
+  title  = {Inference for heterogeneous effects using low-rank estimations},
+  year   = {2019},
+  month  = jun,
+  doi    = {10.1920/wp.cem.2019.3119},
+  groups = {Matrix Inference},
+  school = {The IFS},
+}
+
+@Book{McCullagh2019,
+  author    = {McCullagh, P. and Nelder, J.A.},
+  publisher = {Routledge},
+  title     = {Generalized Linear Models},
+  year      = {2019},
+  isbn      = {9780203753736},
+  month     = jan,
+  doi       = {10.1201/9780203753736},
+  groups    = {Matrix GLM},
+}
+
+@Article{Candes2009,
+  author    = {Candès, Emmanuel J. and Recht, Benjamin},
+  journal   = {Foundations of Computational Mathematics},
+  title     = {Exact Matrix Completion via Convex Optimization},
+  year      = {2009},
+  issn      = {1615-3383},
+  month     = apr,
+  number    = {6},
+  pages     = {717--772},
+  volume    = {9},
+  doi       = {10.1007/s10208-009-9045-5},
+  groups    = {nuclear},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Candes2010,
+  author    = {Candes, Emmanuel J and Plan, Yaniv},
+  journal   = {Proceedings of the IEEE},
+  title     = {Matrix Completion With Noise},
+  year      = {2010},
+  issn      = {1558-2256},
+  month     = jun,
+  number    = {6},
+  pages     = {925--936},
+  volume    = {98},
+  doi       = {10.1109/jproc.2009.2035722},
+  groups    = {nuclear},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{Koltchinskii2011,
+  author    = {Koltchinskii, Vladimir and Lounici, Karim and Tsybakov, Alexandre B.},
+  journal   = {The Annals of Statistics},
+  title     = {Nuclear-norm penalization and optimal rates for noisy low-rank matrix completion},
+  year      = {2011},
+  issn      = {0090-5364},
+  month     = oct,
+  number    = {5},
+  volume    = {39},
+  doi       = {10.1214/11-aos894},
+  groups    = {nuclear},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{Beck2009,
+  author    = {Beck, Amir and Teboulle, Marc},
+  journal   = {SIAM Journal on Imaging Sciences},
+  title     = {A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems},
+  year      = {2009},
+  issn      = {1936-4954},
+  month     = jan,
+  number    = {1},
+  pages     = {183--202},
+  volume    = {2},
+  doi       = {10.1137/080716542},
+  groups    = {nuclear},
+  publisher = {Society for Industrial & Applied Mathematics (SIAM)},
+}
+
+@Article{Cai2010,
+  author    = {Cai, Jian-Feng and Candès, Emmanuel J. and Shen, Zuowei},
+  journal   = {SIAM Journal on Optimization},
+  title     = {A Singular Value Thresholding Algorithm for Matrix Completion},
+  year      = {2010},
+  issn      = {1095-7189},
+  month     = jan,
+  number    = {4},
+  pages     = {1956--1982},
+  volume    = {20},
+  doi       = {10.1137/080738970},
+  groups    = {nuclear},
+  publisher = {Society for Industrial & Applied Mathematics (SIAM)},
+}
+
+@Article{Mazumder20102287,
+  author                 = {Mazumder, Rahul and Hastie, Trevor and Tibshirani, Robert},
+  journal                = {Journal of Machine Learning Research},
+  title                  = {Spectral regularization algorithms for learning large incomplete matrices},
+  year                   = {2010},
+  issn                   = {15337928},
+  note                   = {Cited by: 937},
+  pages                  = {2287 – 2322},
+  volume                 = {11},
+  abbrev_source_title    = {J. Mach. Learn. Res.},
+  abstract               = {We use convex relaxation techniques to provide a sequence of regularized low-rank solutions for large-scale matrix completion problems. Using the nuclear norm as a regularizer, we provide a simple and very efficient convex algorithm for minimizing the reconstruction error subject to a bound on the nuclear norm. Our algorithm Soft-Impute iteratively replaces the missing elements with those obtained from a soft-thresholded SVD. With warm starts this allows us to efficiently compute an entire regularization path of solutions on a grid of values of the regularization parameter. The computationally intensive part of our algorithm is in computing a low-rank SVD of a dense matrix. Exploiting the problem structure, we show that the task can be performed with a complexity of order linear in the matrix dimensions. Our semidefinite-programming algorithm is readily scalable to large matrices; for example Soft-Impute takes a few hours to compute low-rank approximations of a 106 × 106 incomplete matrix with 107 observed entries, and fits a rank-95 approximation to the full Netflix training set in 3.3 hours. Our methods achieve good training and test errors and exhibit superior timings when compared to other competitive state-of-the-art techniques. © 2010 Rahul Mazumder, Trevor Hastie and Rob Tibshirani.},
+  affiliations           = {Department of Statistics, Stanford University, Stanford, CA 94305, United States; Department of Health, Research and Policy, Stanford University, Stanford, CA 94305, United States},
+  author_keywords        = {Collaborative filtering; Large scale convex optimization; Netflix prize; Nuclear norm; Spectral regularization},
+  correspondence_address = {R. Mazumder; Department of Statistics, Stanford University, Stanford, CA 94305, United States; email: RAHULM@STANFORD.EDU},
+  groups                 = {nuclear},
+  keywords               = {Approximation algorithms; Optimization; Relaxation processes; Signal filtering and prediction; Singular value decomposition; Collaborative filtering; Large-scale convex optimization; Netflix prize; Nuclear norm; Spectral regularization; Convex optimization},
+  language               = {English},
+  publication_stage      = {Final},
+  source                 = {Scopus},
+  type                   = {Article},
+  url                    = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-77956944781&partnerID=40&md5=b2f61ad171ec1864510013d5d0cd1300},
+}
+
+@Article{Ma2009,
+  author    = {Ma, Shiqian and Goldfarb, Donald and Chen, Lifeng},
+  journal   = {Mathematical Programming},
+  title     = {Fixed point and Bregman iterative methods for matrix rank minimization},
+  year      = {2009},
+  issn      = {1436-4646},
+  month     = sep,
+  number    = {1–2},
+  pages     = {321--353},
+  volume    = {128},
+  doi       = {10.1007/s10107-009-0306-5},
+  groups    = {nuclear},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Cai2016,
+  author    = {Cai, T. Tony and Liang, Tengyuan and Rakhlin, Alexander},
+  journal   = {The Annals of Statistics},
+  title     = {Geometric inference for general high-dimensional linear inverse problems},
+  year      = {2016},
+  issn      = {0090-5364},
+  month     = aug,
+  number    = {4},
+  volume    = {44},
+  doi       = {10.1214/15-aos1426},
+  groups    = {Matrix Inference},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{Xia2019,
+  author    = {Xia, Dong},
+  journal   = {IEEE Transactions on Information Theory},
+  title     = {Confidence Region of Singular Subspaces for Low-Rank Matrix Regression},
+  year      = {2019},
+  issn      = {1557-9654},
+  month     = nov,
+  number    = {11},
+  pages     = {7437--7459},
+  volume    = {65},
+  doi       = {10.1109/tit.2019.2924900},
+  groups    = {Matrix Inference},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@article{keshavan2010matrix,
+	title={Matrix completion from a few entries},
+	author={Keshavan, Raghunandan H and Montanari, Andrea and Oh, Sewoong},
+	journal={IEEE transactions on information theory},
+	volume={56},
+	number={6},
+	pages={2980--2998},
+	year={2010},
+	publisher={IEEE}
+}
+
+@article{sun2016guaranteed,
+	title={Guaranteed matrix completion via non-convex factorization},
+	author={Sun, Ruoyu and Luo, Zhi-Quan},
+	journal={IEEE Transactions on Information Theory},
+	volume={62},
+	number={11},
+	pages={6535--6579},
+	year={2016},
+	publisher={IEEE}
+}
+
+@Article{AlDhabyani2020,
+  author    = {Al-Dhabyani, Walid and Gomaa, Mohammed and Khaled, Hussien and Fahmy, Aly},
+  journal   = {Data in Brief},
+  title     = {Dataset of breast ultrasound images},
+  year      = {2020},
+  issn      = {2352-3409},
+  month     = feb,
+  pages     = {104863},
+  volume    = {28},
+  doi       = {10.1016/j.dib.2019.104863},
+  publisher = {Elsevier BV},
+}
+
+@article{dawid1981some,
+	title={Some matrix-variate distribution theory: notational considerations and a Bayesian application},
+	author={Dawid, A Philip},
+	journal={Biometrika},
+	volume={68},
+	number={1},
+	pages={265--274},
+	year={1981},
+	publisher={Oxford University Press}
+}
+
+@Article{Hoff2011,
+  author    = {Hoff, Peter D.},
+  journal   = {Bayesian Analysis},
+  title     = {Separable covariance arrays via the Tucker product, with applications to multivariate relational data},
+  year      = {2011},
+  issn      = {1936-0975},
+  month     = jun,
+  number    = {2},
+  volume    = {6},
+  doi       = {10.1214/11-ba606},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Book{gupta2018matrix,
+  author    = {Gupta, Arjun K and Nagar, Daya K},
+  publisher = {Chapman and Hall/CRC},
+  title     = {Matrix variate distributions},
+  year      = {2018},
+}
+
+@Article{Zhang2023a,
+  author    = {Zhang, Yichi and Shen, Weining and Kong, Dehan},
+  journal   = {Journal of the American Statistical Association},
+  title     = {Covariance estimation for matrix-valued data},
+  year      = {2023},
+  number    = {544},
+  pages     = {2620--2631},
+  volume    = {118},
+  publisher = {Taylor \& Francis},
+}
+
+@Book{gupta2018matrix,
+  author    = {Gupta, Arjun K and Nagar, Daya K},
+  publisher = {Chapman and Hall/CRC},
+  title     = {Matrix variate distributions},
+  year      = {2018},
+}
+
+@article{lu2005likelihood,
+	title={The likelihood ratio test for a separable covariance matrix},
+	author={Lu, Nelson and Zimmerman, Dale L},
+	journal={Statistics \& probability letters},
+	volume={73},
+	number={4},
+	pages={449--457},
+	year={2005},
+	publisher={Elsevier}
+}
+
+@article{filipiak2016score,
+	title={Score test for a separable covariance structure with the first component as compound symmetric correlation matrix},
+	author={Filipiak, Katarzyna and Klein, Daniel and Roy, Anuradha},
+	journal={Journal of Multivariate Analysis},
+	volume={150},
+	pages={105--124},
+	year={2016},
+	publisher={Elsevier}
+}
+
+
+@article{aston2017tests,
+	title={Tests for separability in nonparametric covariance operators of random surfaces},
+	author={Aston, John AD and Pigoli, Davide and Tavakoli, Shahin},
+	journal={The Annals of Statistics},
+	pages={1431--1461},
+	year={2017},
+	publisher={JSTOR}
+}
+
+
+@article{kleibergen2006generalized,
+	title={Generalized reduced rank tests using the singular value decomposition},
+	author={Kleibergen, Frank and Paap, Richard},
+	journal={Journal of econometrics},
+	volume={133},
+	number={1},
+	pages={97--126},
+	year={2006},
+	publisher={Elsevier}
+}
+
+
+
+@article{fan2012variance,
+	title={Variance estimation using refitted cross-validation in ultrahigh dimensional regression},
+	author={Fan, Jianqing and Guo, Shaojun and Hao, Ning},
+	journal={Journal of the Royal Statistical Society Series B: Statistical Methodology},
+	volume={74},
+	number={1},
+	pages={37--65},
+	year={2012},
+	publisher={Oxford University Press}
+}
+
+@article{Chernozhukov2018,
+	author = {Chernozhukov, Victor and Chetverikov, Denis and Demirer, Mert and Duflo, Esther and Hansen, Christian and Newey, Whitney and Robins, James},
+	title = {Double/debiased machine learning for treatment and structural parameters},
+	journal = {The Econometrics Journal},
+	volume = {21},
+	number = {1},
+	pages = {C1-C68},
+	year = {2018},
+	month = {01},
+	abstract = {We revisit the classic semi‐parametric problem of inference on a low‐dimensional parameter θ0 in the presence of high‐dimensional nuisance parameters η0. We depart from the classical setting by allowing for η0 to be so high‐dimensional that the traditional assumptions (e.g. Donsker properties) that limit complexity of the parameter space for this object break down. To estimate η0, we consider the use of statistical or machine learning (ML) methods, which are particularly well suited to estimation in modern, very high‐dimensional cases. ML methods perform well by employing regularization to reduce variance and trading off regularization bias with overfitting in practice. However, both regularization bias and overfitting in estimating η0 cause a heavy bias in estimators of θ0 that are obtained by naively plugging ML estimators of η0 into estimating equations for θ0. This bias results in the naive estimator failing to be N−1/2 consistent, where N is the sample size. We show that the impact of regularization bias and overfitting on estimation of the parameter of interest θ0 can be removed by using two simple, yet critical, ingredients: (1) using Neyman‐orthogonal moments/scores that have reduced sensitivity with respect to nuisance parameters to estimate θ0; (2) making use of cross‐fitting, which provides an efficient form of data‐splitting. We call the resulting set of methods double or debiased ML (DML). We verify that DML delivers point estimators that concentrate in an N−1/2‐neighbourhood of the true parameter values and are approximately unbiased and normally distributed, which allows construction of valid confidence statements. The generic statistical theory of DML is elementary and simultaneously relies on only weak theoretical requirements, which will admit the use of a broad array of modern ML methods for estimating the nuisance parameters, such as random forests, lasso, ridge, deep neural nets, boosted trees, and various hybrids and ensembles of these methods. We illustrate the general theory by applying it to provide theoretical properties of the following: DML applied to learn the main regression parameter in a partially linear regression model; DML applied to learn the coefficient on an endogenous variable in a partially linear instrumental variables model; DML applied to learn the average treatment effect and the average treatment effect on the treated under unconfoundedness; DML applied to learn the local average treatment effect in an instrumental variables setting. In addition to these theoretical applications, we also illustrate the use of DML in three empirical examples.},
+	issn = {1368-4221},
+	doi = {10.1111/ectj.12097},
+	url = {https://doi.org/10.1111/ectj.12097},
+	eprint = {https://academic.oup.com/ectj/article-pdf/21/1/C1/27684918/ectj00c1.pdf},
+}
+
+@Book{Lehmann2022,
+  author    = {Lehmann, E.L. and Romano, Joseph P.},
+  publisher = {Springer International Publishing},
+  title     = {Testing Statistical Hypotheses},
+  year      = {2022},
+  isbn      = {9783030705787},
+  volume    = {4},
+  doi       = {10.1007/978-3-030-70578-7},
+  issn      = {2197-4136},
+  journal   = {Springer Texts in Statistics},
+}
+
+
+@article{fan2022learning,
+	title={Learning latent factors from diversified projections and its applications to over-estimated and weak factors},
+	author={Fan, Jianqing and Liao, Yuan},
+	journal={Journal of the American Statistical Association},
+	volume={117},
+	number={538},
+	pages={909--924},
+	year={2022},
+	publisher={Taylor \& Francis}
+}
+
+
+@article{jankova2018semiparametric,
+	title={Semiparametric efficiency bounds for high-dimensional models},
+	author={Jankova, Jana and Van De Geer, Sara},
+	journal={The Annals of Statistics},
+	volume={46},
+	number={5},
+	pages={2336--2359},
+	year={2018},
+	publisher={JSTOR}
+}
+
+@Article{Lian2019,
+  author    = {Lian, Heng and Zhao, Kaifeng and Lv, Shaogao},
+  journal   = {The Annals of Statistics},
+  title     = {Projected spline estimation of the nonparametric function in high-dimensional partially linear models for massive data},
+  year      = {2019},
+  issn      = {0090-5364},
+  month     = oct,
+  number    = {5},
+  volume    = {47},
+  doi       = {10.1214/18-aos1769},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{Obozinski2011,
+  author    = {Obozinski, Guillaume and Wainwright, Martin J. and Jordan, Michael I.},
+  journal   = {The Annals of Statistics},
+  title     = {Support union recovery in high-dimensional multivariate regression},
+  year      = {2011},
+  issn      = {0090-5364},
+  month     = feb,
+  number    = {1},
+  volume    = {39},
+  doi       = {10.1214/09-aos776},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@InProceedings{wang2013block,
+  author       = {Wang, Weiguang and Liang, Yingbin and Xing, Eric},
+  booktitle    = {Artificial intelligence and statistics},
+  title        = {Block regularized lasso for multivariate multi-response linear regression},
+  year         = {2013},
+  organization = {PMLR},
+  pages        = {608--617},
+}
+
+@Article{cheng2022regularized,
+  author    = {Cheng, Chao and Feng, Xingdong and Huang, Jian and Liu, Xu},
+  journal   = {Statistica Sinica},
+  title     = {Regularized projection score estimation of treatment effects in high-dimensional quantile regression},
+  year      = {2022},
+  number    = {1},
+  pages     = {23--41},
+  volume    = {32},
+  publisher = {JSTOR},
+}
+
+@article{bai1993limit,
+	title={Limit of the smallest eigenvalue of a large dimensional sample covariance matrix},
+	author={Bai, Zhi-Dong and Yin, Yong-Qua and others},
+	journal={Ann. Probab},
+	volume={21},
+	number={3},
+	pages={1275--1294},
+	year={1993},
+	publisher={World Scientific}
+}
+
+@Article{Smith2005,
+  author    = {Smith, S.T.},
+  journal   = {IEEE Transactions on Signal Processing},
+  title     = {Covariance, subspace, and intrinsic Crame/spl acute/r-Rao bounds},
+  year      = {2005},
+  issn      = {1053-587X},
+  month     = may,
+  number    = {5},
+  pages     = {1610--1630},
+  volume    = {53},
+  doi       = {10.1109/tsp.2005.845428},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{Boumal2013,
+  author    = {Boumal, Nicolas},
+  journal   = {IEEE Transactions on Signal Processing},
+  title     = {On Intrinsic Cram{\'e}r-Rao Bounds for Riemannian Submanifolds and Quotient Manifolds},
+  year      = {2013},
+  issn      = {1941-0476},
+  month     = apr,
+  number    = {7},
+  pages     = {1809--1821},
+  volume    = {61},
+  doi       = {10.1109/tsp.2013.2242068},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{ma2024statistical,
+  author  = {Ma, Wanteng and Xia, Dong},
+  journal = {arXiv preprint arXiv:2410.11225},
+  title   = {Statistical inference in tensor completion: Optimal uncertainty quantification and statistical-to-computational gaps},
+  year    = {2024},
+}
+
+@Article{Fan2011,
+  author    = {Fan, Jianqing and Liao, Yuan and Mincheva, Martina},
+  journal   = {The Annals of Statistics},
+  title     = {High-dimensional covariance matrix estimation in approximate factor models},
+  year      = {2011},
+  issn      = {0090-5364},
+  month     = dec,
+  number    = {6},
+  volume    = {39},
+  doi       = {10.1214/11-aos944},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@article{adamczak2015concentration,
+	title={Concentration inequalities for non-Lipschitz functions with bounded derivatives of higher order},
+	author={Adamczak, Rados{\l}aw and Wolff, Pawe{\l}},
+	journal={Probability Theory and Related Fields},
+	volume={162},
+	pages={531--586},
+	year={2015},
+	publisher={Springer}
+}
+
+ 
+@article{GUO2017334,
+	title = {Characterization of criteria air pollutants in Beijing during 2014–2015},
+	journal = {Environmental Research},
+	volume = {154},
+	pages = {334-344},
+	year = {2017},
+	issn = {0013-9351},
+	doi = {https://doi.org/10.1016/j.envres.2017.01.029},
+	url = {https://www.sciencedirect.com/science/article/pii/S001393511730155X},
+	author = {Hao Guo and Yungang Wang and Hongliang Zhang},
+	keywords = {Criteria pollutants, Ozone, PM, Meteorology condition, Beijing},
+	abstract = {One year-long criteria air pollutants data collected in Beijing were analyzed in this paper, which can support the research on formation, transport and human health effects of air pollutants. This is the first time to study the spatial and temporal variations of criteria pollutants in Beijing using hourly observational data from 12 sites between June 2014 and May 2015 released by the Ministry of Environmental Protection (MEP) of China. Beijing is facing tremendous air pollution as the daily averaged PM2.5 (particulate matter with aerodynamic diameter less than 2.5µm) concentrations in all sites exceeding the Chinese Ambient Air Quality Standards (CAAQS) Grade I & II standards (15 and 35µg/m3). Slightly differences in PM2.5 and ozone (O3) were observed between sites at the urban and rural areas. Pearson correlation coefficients show that most pollutants are temporally correlated in Beijing except for O3. The coefficients of divergence (COD) indicate that PM2.5 is associated at most sites with only one rural site (Dingling) having observable difference and one site may be insufficient for monitoring surrounding area. The 8h peak O3 (O3-8h) also correlates at different sites but with one urban site (Haidianquwanliu) different from others. In addition, an extreme PM2.5 event (hourly average concentration exceeding 300μg/m3 for ~40h) was examined with the consideration of meteorological conditions. Southerly wind with low speed and high relative humidity allow the accumulation of pollutants while northerly wind with high speed and low relative humidity result in good air quality.}
+}
+
+@Article{Su2018,
+  author    = {Su, Jie and Qing, Linbo and He, Xiaohai and Zhang, Hang and Zhou, Jing and Peng, Yonghong},
+  journal   = {IEEE Access},
+  title     = {A New Regularized Matrix Discriminant Analysis (R-MDA) Enabled Human-Centered EEG Monitoring Systems},
+  year      = {2018},
+  issn      = {2169-3536},
+  pages     = {13911--13920},
+  volume    = {6},
+  doi       = {10.1109/access.2018.2803806},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{Pu2024,
+  author    = {Pu, Dan and Fang, Kuangnan and Lan, Wei and Yu, Jihai and Zhang, Qingzhao},
+  journal   = {Journal of Econometrics},
+  title     = {Multivariate spatiotemporal models with low rank coefficient matrix},
+  year      = {2024},
+  issn      = {0304-4076},
+  month     = nov,
+  number    = {1–2},
+  pages     = {105897},
+  volume    = {246},
+  doi       = {10.1016/j.jeconom.2024.105897},
+  publisher = {Elsevier BV},
+}
+
+@Article{Yang2017,
+  author    = {Yang, Jian and Luo, Lei and Qian, Jianjun and Tai, Ying and Zhang, Fanlong and Xu, Yong},
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title     = {Nuclear Norm Based Matrix Regression with Applications to Face Recognition with Occlusion and Illumination Changes},
+  year      = {2017},
+  issn      = {2160-9292},
+  month     = jan,
+  number    = {1},
+  pages     = {156--171},
+  volume    = {39},
+  doi       = {10.1109/tpami.2016.2535218},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{Yi2022,
+  author    = {Yi, Paul H. and Kim, Tae Kyung and Siegel, Eliot and Yahyavi-Firouz-Abadi, Noushin},
+  journal   = {Journal of the American College of Radiology},
+  title     = {Demographic Reporting in Publicly Available Chest Radiograph Data Sets: Opportunities for Mitigating Sex and Racial Disparities in Deep Learning Models},
+  year      = {2022},
+  issn      = {1546-1440},
+  month     = jan,
+  number    = {1},
+  pages     = {192--200},
+  volume    = {19},
+  doi       = {10.1016/j.jacr.2021.08.018},
+  publisher = {Elsevier BV},
+}
+
+@Article{Singh2014,
+  author    = {Singh, Nikhil and Thomas Fletcher, P. and Samuel Preston, J. and King, Richard D. and Marron, J.S. and Weiner, Michael W. and Joshi, Sarang},
+  journal   = {Medical Image Analysis},
+  title     = {Quantifying anatomical shape variations in neurological disorders},
+  year      = {2014},
+  issn      = {1361-8415},
+  month     = apr,
+  number    = {3},
+  pages     = {616--633},
+  volume    = {18},
+  doi       = {10.1016/j.media.2014.01.001},
+  publisher = {Elsevier BV},
+}
+
+@Article{Espinoza2011,
+  author    = {Espinoza, Raphael and Fornari, Fabio and Lombardi, Marco J.},
+  journal   = {Journal of Forecasting},
+  title     = {The Role of Financial Variables in predicting economic activity},
+  year      = {2011},
+  issn      = {1099-131X},
+  month     = feb,
+  number    = {1},
+  pages     = {15--46},
+  volume    = {31},
+  doi       = {10.1002/for.1212},
+  publisher = {Wiley},
+}
+
+@Article{keck2009forecasting,
+  author    = {Keck, Alexander and Raubold, Alexander and Truppia, Alessandro},
+  journal   = {Journal of Business Cycle Research},
+  title     = {Forecasting international trade: A time series approach},
+  year      = {2009},
+  number    = {2},
+  pages     = {157},
+  volume    = {2009},
+  publisher = {Springer Nature BV},
+}
+
+@Article{xu2025statistical,
+  author  = {Xu, Ke and Chen, Elynn and Han, Yuefeng},
+  journal = {arXiv preprint arXiv:2501.16223},
+  title   = {Statistical Inference for Low-Rank Tensor Models},
+  year    = {2025},
+}
+
+ 
+@Article{Gao2020,
+  author    = {Gao, Xu and Shen, Weining and Zhang, Liwen and Hu, Jianhua and Fortin, Norbert J. and Frostig, Ron D. and Ombao, Hernando},
+  journal   = {Biometrics},
+  title     = {Regularized matrix data clustering and its application to image analysis},
+  year      = {2020},
+  issn      = {1541-0420},
+  month     = aug,
+  number    = {3},
+  pages     = {890--902},
+  volume    = {77},
+  doi       = {10.1111/biom.13354},
+  publisher = {Oxford University Press (OUP)},
+}
+
+@Article{Haas1995,
+  author    = {Haas, Timothy C.},
+  journal   = {Journal of the American Statistical Association},
+  title     = {Local Prediction of a Spatio-Temporal Process with an Application to Wet Sulfate Deposition},
+  year      = {1995},
+  issn      = {1537-274X},
+  month     = dec,
+  number    = {432},
+  pages     = {1189--1199},
+  volume    = {90},
+  doi       = {10.1080/01621459.1995.10476625},
+  publisher = {Informa UK Limited},
+}
+
+@Book{cressie2015statistics,
+  author    = {Cressie, Noel},
+  publisher = {John Wiley \& Sons},
+  title     = {Statistics for spatial data},
+  year      = {2015},
+}
+
+@Article{Gao2020a,
+  author    = {Gao, Xu and Shen, Weining and Shahbaba, Babak and Fortin, Norbert J. and Ombao, Hernando},
+  journal   = {Statistica Sinica},
+  title     = {Evolutionary State-Space Model and Its Application to Time-Frequency Analysis of Local Field Potentials},
+  year      = {2020},
+  issn      = {1017-0405},
+  doi       = {10.5705/ss.202017.0420},
+  publisher = {Statistica Sinica (Institute of Statistical Science)},
+}
+
+ 
+
+@InBook{Carpentier2019,
+  author    = {Carpentier, Alexandra and Eisert, Jens and Gross, David and Nickl, Richard},
+  pages     = {385--430},
+  publisher = {Springer International Publishing},
+  title     = {Uncertainty Quantification for Matrix Compressed Sensing and Quantum Tomography Problems},
+  year      = {2019},
+  isbn      = {9783030263911},
+  booktitle = {High Dimensional Probability VIII},
+  doi       = {10.1007/978-3-030-26391-1_18},
+  issn      = {2297-0428},
+}
+
+@Article{Goetze2021,
+  author    = {Götze, Friedrich and Sambale, Holger and Sinulis, Arthur},
+  journal   = {Electronic Journal of Probability},
+  title     = {Concentration inequalities for polynomials in {$\alpha$}-sub-exponential random variables},
+  year      = {2021},
+  issn      = {1083-6489},
+  month     = jan,
+  number    = {none},
+  volume    = {26},
+  doi       = {10.1214/21-ejp606},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@article{xu2025statistical,
+	title={Statistical inference for low-rank tensor models},
+	author={Xu, Ke and Chen, Elynn and Han, Yuefeng},
+	journal={arXiv preprint arXiv:2501.16223},
+	year={2025}
+}
+
+@Article{Wang2022,
+  author    = {Wang, Yu and Sun, Zeyu and Song, Dogyoon and Hero, Alfred},
+  journal   = {Statistics Surveys},
+  title     = {Kronecker-structured covariance models for multiway data},
+  year      = {2022},
+  issn      = {1935-7516},
+  month     = jan,
+  number    = {none},
+  volume    = {16},
+  doi       = {10.1214/22-ss139},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@Article{cen2025testing,
+  author  = {Cen, Zetai and Lam, Clifford},
+  journal = {arXiv preprint arXiv:2501.11208},
+  title   = {On Testing Kronecker Product Structure in Tensor Factor Models},
+  year    = {2025},
+}
+
+@Article{Ke2025,
+  author    = {Ke, Baofang and Zhao, Weihua and Wang, Lei},
+  journal   = {Statistics and Computing},
+  title     = {Statistical inference for matrix-vector linear regression without debiasing under Kronecker covariance structure},
+  year      = {2025},
+  issn      = {1573-1375},
+  month     = sep,
+  number    = {6},
+  volume    = {35},
+  doi       = {10.1007/s11222-025-10732-5},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+
+@Article{Smith2005,
+  author    = {Smith, S.T.},
+  journal   = {IEEE Transactions on Signal Processing},
+  title     = {Covariance, subspace, and intrinsic Crame/spl acute/r-Rao bounds},
+  year      = {2005},
+  issn      = {1053-587X},
+  month     = may,
+  number    = {5},
+  pages     = {1610--1630},
+  volume    = {53},
+  doi       = {10.1109/tsp.2005.845428},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@article{athey2018approximate,
+	title={Approximate residual balancing: debiased inference of average treatment effects in high dimensions},
+	author={Athey, Susan and Imbens, Guido W and Wager, Stefan},
+	journal={Journal of the Royal Statistical Society Series B: Statistical Methodology},
+	volume={80},
+	number={4},
+	pages={597--623},
+	year={2018},
+	publisher={Oxford University Press}
+}
+
+@article{javanmard2020flexible,
+	title={A flexible framework for hypothesis testing in high dimensions},
+	author={Javanmard, Adel and Lee, Jason D},
+	journal={Journal of the Royal Statistical Society Series B: Statistical Methodology},
+	volume={82},
+	number={3},
+	pages={685--718},
+	year={2020},
+	publisher={Oxford University Press}
+}
+
+
+@article{cai2021optimal,
+	title={Optimal statistical inference for individualized treatment effects in high-dimensional models},
+	author={Cai, Tianxi and Tony Cai, T and Guo, Zijian},
+	journal={Journal of the Royal Statistical Society Series B: Statistical Methodology},
+	volume={83},
+	number={4},
+	pages={669--719},
+	year={2021},
+	publisher={Oxford University Press}
+}
+
+@article{xia2020revisit,
+	title={A revisit to de-biased lasso for generalized linear models},
+	author={Xia, Lu and Nan, Bin and Li, Yi},
+	journal={arXiv preprint arXiv:2006.12778},
+	year={2020}
+}
+
+@article{fan2001variable,
+	title={Variable selection via nonconcave penalized likelihood and its oracle properties},
+	author={Fan, Jianqing and Li, Runze},
+	journal={Journal of the American statistical Association},
+	volume={96},
+	number={456},
+	pages={1348--1360},
+	year={2001},
+	publisher={Taylor \& Francis}
+}
+
+@article{park2025transfer,
+	title={Transfer learning under large-scale low-rank regression models},
+	author={Park, Seyoung and Lee, Eun Ryung and Kim, Hyunjin and Zhao, Hongyu},
+	journal={Journal of the American Statistical Association},
+	pages={1--13},
+	year={2025},
+	publisher={Taylor \& Francis}
+}
+
+@Article{de2000best,
+	author    = {De Lathauwer, Lieven and De Moor, Bart and Vandewalle, Joos},
+	title     = {On the best rank-1 and rank-(r 1, r 2,..., rn) approximation of higher-order tensors},
+	number    = {4},
+	pages     = {1324--1342},
+	volume    = {21},
+	journal   = {SIAM journal on Matrix Analysis and Applications},
+	publisher = {SIAM},
+	year      = {2000},
+}
+
+@Article{Han2022,
+	author       = {Han, Rungang and Willett, Rebecca and Zhang, Anru R.},
+	date         = {2022-02},
+	year         = {2022},
+	journaltitle = {The Annals of Statistics},
+	title        = {An optimal statistical and computational framework for generalized tensor estimation},
+	doi          = {10.1214/21-aos2061},
+	issn         = {0090-5364},
+	number       = {1},
+	volume       = {50},
+	publisher    = {Institute of Mathematical Statistics},
+}
+
+@Article{Zhang2020,
+	author       = {Zhang, Anru R. and Luo, Yuetian and Raskutti, Garvesh and Yuan, Ming},
+	date         = {2020-01},
+	year         = {2020},
+	journaltitle = {SIAM Journal on Mathematics of Data Science},
+	title        = {ISLET: Fast and Optimal Low-Rank Tensor Regression via Importance Sketching},
+	doi          = {10.1137/19m126476x},
+	issn         = {2577-0187},
+	number       = {2},
+	pages        = {444--479},
+	volume       = {2},
+	publisher    = {Society for Industrial & Applied Mathematics (SIAM)},
+}
+
+@article{Cape2019,
+  author    = {Cape, Joshua and Tang, Minh and Priebe, Carey E.},
+  journal   = {The Annals of Statistics},
+  title     = {The two-to-infinity norm and singular subspace geometry with applications to high-dimensional statistics},
+  year      = {2019},
+  issn      = {0090-5364},
+  month     = oct,
+  number    = {5},
+  volume    = {47},
+  doi       = {10.1214/18-aos1752},
+  publisher = {Institute of Mathematical Statistics},
+}
+
+@article{CandesRecht2009,
+	title   = {Exact Matrix Completion via Convex Optimization},
+	author  = {Cand{\`e}s, Emmanuel J. and Recht, Benjamin},
+	journal = {Foundations of Computational Mathematics},
+	volume  = {9},
+	number  = {6},
+	pages   = {717--772},
+	year    = {2009},
+	doi     = {10.1007/s10208-009-9045-5}
+}
+
+@article{NegahbanWainwright2011,
+	title   = {Estimation of (Near) Low-Rank Matrices with Noise and High-Dimensional Scaling},
+	author  = {Negahban, Sahand N. and Wainwright, Martin J.},
+	journal = {The Annals of Statistics},
+	volume  = {39},
+	number  = {2},
+	pages   = {1069--1097},
+	year    = {2011},
+	doi     = {10.1214/10-AOS850}
+}
+
+@article{Dutilleul1999,
+	title   = {The {MLE} Algorithm for the Matrix Normal Distribution},
+	author  = {Dutilleul, Pierre},
+	journal = {Journal of Statistical Computation and Simulation},
+	volume  = {64},
+	number  = {2},
+	pages   = {105--123},
+	year    = {1999},
+	doi     = {10.1080/00949659908811970}
+}
+
+@article{KoldaBader2009,
+	title   = {Tensor Decompositions and Applications},
+	author  = {Kolda, Tamara G. and Bader, Brett W.},
+	journal = {SIAM Review},
+	volume  = {51},
+	number  = {3},
+	pages   = {455--500},
+	year    = {2009},
+	doi     = {10.1137/07070111X}
+}
+
+@article{ZhouLiZhu2013,
+	title   = {Tensor Regression with Applications in Neuroimaging Data Analysis},
+	author  = {Zhou, Hua and Li, Lexin and Zhu, Hongtu},
+	journal = {Journal of the American Statistical Association},
+	volume  = {108},
+	number  = {502},
+	pages   = {540--552},
+	year    = {2013},
+	doi     = {10.1080/01621459.2013.776499}
+}
+
+@article{JavanmardMontanari2014,
+	title   = {Confidence Intervals and Hypothesis Testing for High-Dimensional Regression},
+	author  = {Javanmard, Adel and Montanari, Andrea},
+	journal = {Journal of Machine Learning Research},
+	volume  = {15},
+	pages   = {2869--2909},
+	year    = {2014},
+	url     = {https://jmlr.csail.mit.edu/papers/v15/javanmard14a.html}
+}
+
+@article{ZhangZhang2014,
+	title   = {Confidence Intervals for Low Dimensional Parameters in High Dimensional Linear Models},
+	author  = {Zhang, Cun-Hui and Zhang, Stephanie S.},
+	journal = {Journal of the Royal Statistical Society: Series B (Statistical Methodology)},
+	volume  = {76},
+	number  = {1},
+	pages   = {217--242},
+	year    = {2014},
+	doi     = {10.1111/rssb.12026}
+}
+
+@article{Alexander2017HBN,
+	title   = {An open resource for transdiagnostic research in pediatric mental health and learning disorders},
+	author  = {Alexander, Lindsey M. and Escalera, Jasmine and Ai, Lei and Andreotti, Charissa and Febre, Karla and Mangone, Amanda and Vega-Potler, Nancy and Langer, Nicole and Alexander, Andrew and Kovacs, Matthew and Litke, Sarah and O'Hagan, Brian and Andersen, Joelle and Bronstein, Brian and Bui, Andrew and Bushey, Melody and Butler, Harrison and Castagna, Veronica and Camacho, Natalia and Chan, Elizabeth and Citera, Dennis and Clucas, Jon and Cohen, Sarah and Delorme, Arnaud and Dewey, Stephen and Dong, Hui and Dunlop, Kelly and Dvoracek, Dylan and Elwahed, Yasser G. and Feinberg, David and Forsyth, John K. and Franco, Alex R. and Germine, Laura and Grant-Villegas, Natalie and Green, Ginny and Gregory, Chad and Hart, Elliott and Harris, Shannon and Horton, Mark and Kahn, David and Kabotyanski, Katerina and Karmel, Benjamin and Kelly, Cole and Kleinman, Kira and Koo, Benjamin and Kramer, Emily and Lennon, Elizabeth and Lord, Caroline and Mantello, Gina and Margolis, Anna and Merikangas, Kathleen R. and Milham, Michael P. and Minniti, Guadalupe and Neuhaus, Joanna and Olsen, Amanda and Parra, Luciano C. and Pugh, Kenneth R. and Racanello, Amanda and Restrepo, Ana and Saltzman, Thomas and Septimus, Bita and Tobe, Russell H. and Waltz, Rachel and Williams, Ashley and Yeo, Brenda T. T. and Castellanos, Francisco X. and Klein, Arno and Paus, Tom{\'a}{\v s} and Leventhal, Bennett L. and Craddock, R. Cameron},
+	journal = {Scientific Data},
+	volume  = {4},
+	pages   = {170181},
+	year    = {2017},
+	doi     = {10.1038/sdata.2017.181}
+}
+
+@article{Barry2007EOEC,
+	title   = {EEG differences between eyes-closed and eyes-open resting conditions},
+	author  = {Barry, Robert J. and Clarke, Adam R. and Johnstone, Stephen J. and Magee, Christopher A. and Rushby, Jacqueline A.},
+	journal = {Clinical Neurophysiology},
+	volume  = {118},
+	number  = {12},
+	pages   = {2765--2773},
+	year    = {2007},
+	doi     = {10.1016/j.clinph.2007.07.028}
+}
+
+@article{BuzsakiDraguhn2004,
+	title   = {Neuronal oscillations in cortical networks},
+	author  = {Buzs{\'a}ki, Gy{\"o}rgy and Draguhn, Andreas},
+	journal = {Science},
+	volume  = {304},
+	number  = {5679},
+	pages   = {1926--1929},
+	year    = {2004},
+	doi     = {10.1126/science.1099745}
+}
+
+@article{NewsonThiagarajan2019,
+	title   = {EEG Frequency Bands in Psychiatric Disorders: A Review of Resting State Studies},
+	author  = {Newson, Joshua J. and Thiagarajan, T. C.},
+	journal = {Frontiers in Human Neuroscience},
+	volume  = {12},
+	pages   = {521},
+	year    = {2019},
+	doi     = {10.3389/fnhum.2018.00521}
+}
+
+
+@article{Chernozhukov2023InferenceLowRank,
+	author  = {Chernozhukov, Victor and Hansen, Christian and Liao, Yuan and Zhu, Yinchu},
+	title   = {Inference for Low-Rank Models},
+	journal = {The Annals of Statistics},
+	year    = {2023},
+	volume  = {51},
+	number  = {3},
+	pages   = {1309--1330},
+	doi     = {10.1214/23-AOS2293}
+}
+
+@article{Chen2019InferenceNoisyMC,
+	author  = {Chen, Yuxin and Fan, Jianqing and Ma, Cong and Yan, Yuling},
+	title   = {Inference and Uncertainty Quantification for Noisy Matrix Completion},
+	journal = {Proceedings of the National Academy of Sciences},
+	year    = {2019},
+	volume  = {116},
+	number  = {46},
+	pages   = {22931--22937},
+	doi     = {10.1073/pnas.1910053116}
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Scaled GD\;0\;0\;0xb36680ff\;\;\;;
+2 StaticGroup:Overparam\;0\;1\;0xe6e64dff\;\;\;;
+1 StaticGroup:Non-smooth\;0\;1\;0x66b399ff\;\;\;;
+1 StaticGroup:RiemannianGD\;0\;0\;0x0000ffff\;\;\;;
+1 StaticGroup:SmoothQR\;0\;1\;0xffcce6ff\;\;\;;
+1 StaticGroup:Conquer\;0\;1\;0xccffffff\;\;\;;
+1 StaticGroup:Concentration\;0\;0\;0xff6666ff\;\;\;;
+1 StaticGroup:self-concordent\;0\;1\;0x94e678ff\;\;\;;
+1 StaticGroup:precondition\;0\;1\;0xffe699ff\;\;\;;
+1 StaticGroup:RIP\;0\;0\;0x7cc4e9ff\;\;\;;
+1 StaticGroup:Matrix Inference\;0\;1\;0xe99f7cff\;\;\;;
+1 StaticGroup:debias\;0\;1\;0x00ff00ff\;\;\;;
+1 StaticGroup:Matrix GLM\;0\;0\;\;\;\;;
+1 StaticGroup:nuclear\;0\;1\;\;\;\;;
+}

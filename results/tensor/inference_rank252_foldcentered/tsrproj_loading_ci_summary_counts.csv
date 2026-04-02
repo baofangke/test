@@ -1,0 +1,12 @@
+loading_type,n_loadings,n_excludes_zero
+band_slice,8,5
+condition_slice,2,0
+contrast_band,8,6
+contrast_global,1,0
+contrast_roi_group,3,0
+full_tensor,1,0
+roi_slice,10,1
+shared_band,8,5
+shared_global,1,0
+shared_roi_group,3,1
+single_element,160,140

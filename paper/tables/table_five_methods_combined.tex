@@ -1,0 +1,41 @@
+\begin{table}[!htbp]
+\centering
+\caption{Finite-sample bias and RMSE of five debiasing methods for matrix trace regression under general Kronecker covariance.}
+\label{tab:five-methods-general}
+\scriptsize
+\begin{threeparttable}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lllccccc}
+\toprule
+$A$ & $\sqrt{rp/n}$ & Metric & OS-DB & TS-DB & PI-nosplit & PI-split & Vec-DB \\
+\midrule
+1 & 0.4 & Bias ($\times 10^{-3}$) & \underline{0.208} & -0.360 & 2.054 & 0.267 & \textbf{0.127} \\
+ &  & RMSE & \textbf{0.0164} & 0.0174 & \underline{0.0171} & 0.0177 & 0.0446 \\
+1 & 0.2 & Bias ($\times 10^{-3}$) & \underline{0.248} & 0.270 & 0.602 & \textbf{0.190} & -1.202 \\
+ &  & RMSE & \textbf{0.0077} & \underline{0.0079} & 0.0083 & 0.0083 & 0.0218 \\
+1 & 0.1 & Bias ($\times 10^{-3}$) & 0.020 & \underline{0.017} & 0.126 & \textbf{-0.003} & -0.586 \\
+ &  & RMSE & \underline{0.0041} & \textbf{0.0041} & 0.0044 & 0.0044 & 0.0111 \\
+\midrule
+2 & 0.4 & Bias ($\times 10^{-3}$) & 0.430 & 0.595 & 0.560 & \underline{0.293} & \textbf{-0.115} \\
+ &  & RMSE & \textbf{0.0149} & \underline{0.0150} & 0.0163 & 0.0167 & 0.0450 \\
+2 & 0.2 & Bias ($\times 10^{-3}$) & \underline{0.194} & 0.255 & 0.216 & \textbf{0.169} & 0.791 \\
+ &  & RMSE & \textbf{0.0076} & \underline{0.0077} & 0.0082 & 0.0083 & 0.0225 \\
+2 & 0.1 & Bias ($\times 10^{-3}$) & \underline{0.326} & 0.344 & 0.351 & 0.343 & \textbf{0.003} \\
+ &  & RMSE & \textbf{0.0035} & \underline{0.0036} & 0.0039 & 0.0038 & 0.0110 \\
+\midrule
+3 & 0.4 & Bias ($\times 10^{-3}$) & 0.764 & \textbf{0.622} & \underline{0.642} & 1.048 & 0.976 \\
+ &  & RMSE & \textbf{0.0139} & \underline{0.0146} & 0.0150 & 0.0156 & 0.0362 \\
+3 & 0.2 & Bias ($\times 10^{-3}$) & 0.354 & 0.343 & \underline{0.310} & 0.501 & \textbf{0.212} \\
+ &  & RMSE & \textbf{0.0072} & \underline{0.0074} & 0.0079 & 0.0078 & 0.0199 \\
+3 & 0.1 & Bias ($\times 10^{-3}$) & -0.080 & -0.071 & \textbf{0.010} & 0.076 & \underline{0.013} \\
+ &  & RMSE & \textbf{0.0035} & \underline{0.0035} & 0.0039 & 0.0039 & 0.0098 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Entries are based on 500 Monte Carlo replications.
+\item Bias is reported in units of $10^{-3}$. In each row, the best and second-best values are shown in \textbf{bold} and \underline{underlined}, respectively.
+\item For Bias, ranking is by absolute value; for RMSE, smaller is better.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

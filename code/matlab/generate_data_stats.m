@@ -1,0 +1,32 @@
+function data = generate_data_stats(A, B, C, Mvec, p, n, blockSize, sigma)
+    data.y = zeros(n, 1);
+    sum_X = zeros(p, p, p);
+    S1_sum = zeros(p, p);
+    S2_sum = zeros(p, p);
+    S3_sum = zeros(p, p);
+    avefro_sum = 0;
+    idx = 1;
+    while idx <= n
+        nb = min(blockSize, n - idx + 1);
+        S_block = randn(p, p, p, nb);
+        X_block = ttm(tensor(S_block), {A, B, C}, [1, 2, 3]);
+        X_block = X_block.data;
+        sum_X = sum_X + sum(X_block, 4);
+        X_mode1 = reshape(X_block, p, []);
+        S1_sum = S1_sum + X_mode1 * X_mode1';
+        X_mode2 = reshape(permute(X_block, [2, 1, 3, 4]), p, []);
+        S2_sum = S2_sum + X_mode2 * X_mode2';
+        X_mode3 = reshape(permute(X_block, [3, 1, 2, 4]), p, []);
+        S3_sum = S3_sum + X_mode3 * X_mode3';
+        blk_fro = sum(sum(sum(X_block.^2, 1), 2), 3);
+        avefro_sum = avefro_sum + sum(blk_fro, 4);
+        X_mat = reshape(X_block, [], nb);
+        data.y(idx:idx+nb-1) = X_mat' * Mvec + sigma * randn(nb, 1);
+        idx = idx + nb;
+    end
+    data.mean_term = sum_X / n;
+    data.S1 = S1_sum / n;
+    data.S2 = S2_sum / n;
+    data.S3 = S3_sum / n;
+    data.avefro = avefro_sum / n;
+end

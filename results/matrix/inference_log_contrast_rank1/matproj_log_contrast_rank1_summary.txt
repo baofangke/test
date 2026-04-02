@@ -1,0 +1,13 @@
+ROI10 matProj loading analysis for log10(EC) - log10(EO)
+MAT file: H:\HBN-EEG\derivatives\bandpower_8band_ordered_preproc_roi10\matlab\hbn_bandpower_8band_roi10.mat
+CV summary CSV: H:\HBN-EEG\derivatives\bandpower_8band_ordered_preproc_roi10\cv5_trace_regression_age_log_ec_minus_log_eo\cv5_rank_summary.csv
+Rank fixed at: 1
+CV mean validation MSE: 7.590061
+CV mean validation R2: 0.267672
+Raw log floor uV2: 0.000215735373786
+Split seed reused across all loadings: 20260321
+All loadings normalized to unit Frobenius norm before estimation.
+Results CSV: H:\HBN-EEG\derivatives\matproj_loading_ci_roi10_log_contrast_rank1\matproj_log_contrast_rank1_all_results.csv
+Summary CSV: H:\HBN-EEG\derivatives\matproj_loading_ci_roi10_log_contrast_rank1\matproj_log_contrast_rank1_summary.csv
+Heatmap: H:\HBN-EEG\derivatives\matproj_loading_ci_roi10_log_contrast_rank1\log_contrast_rank1_single_element_heatmap.png
+Structured plot: H:\HBN-EEG\derivatives\matproj_loading_ci_roi10_log_contrast_rank1\log_contrast_rank1_structured_loadings.png

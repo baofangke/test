@@ -1,0 +1,35 @@
+\begin{table}[!htbp]
+\centering
+\caption{Finite-sample bias and RMSE of four debiasing methods for Tucker tensor regression under general Kronecker covariance. The best and second-best values are shown in \textbf{bold} and \underline{underlined}, respectively.}
+\label{tab:tsr-methods-general}
+%\scriptsize
+\begin{threeparttable}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lllcccc}
+\toprule
+$A$ & $\sqrt{rp/n}$ & Metric & OS-DB & IT-split & IT-nosplit & Vec-DB \\
+\midrule
+1 & 0.4 & Bias ($\times 10^{-3}$) & \textbf{1.663} & \underline{-6.176} & 27.673 & -10.754 \\
+ &  & RMSE & \textbf{0.0482} & \underline{0.0675} & 0.0818 & 1.2638 \\
+1 & 0.2 & Bias ($\times 10^{-3}$) & \underline{-1.833} & \textbf{-0.823} & 10.059 & -14.346 \\
+ &  & RMSE & \textbf{0.0476} & \underline{0.0639} & 0.0643 & 1.1646 \\
+1 & 0.1 & Bias ($\times 10^{-3}$) & \underline{-2.138} & -4.793 & \textbf{0.761} & -70.728 \\
+ &  & RMSE & \textbf{0.0456} & 0.0603 & \underline{0.0598} & 1.1080 \\
+\midrule
+2 & 0.4 & Bias ($\times 10^{-3}$) & \textbf{-3.595} & -15.488 & -28.272 & \underline{-11.192} \\
+ &  & RMSE & \textbf{0.0493} & \underline{0.0668} & 0.0697 & 1.4080 \\
+2 & 0.2 & Bias ($\times 10^{-3}$) & \underline{-2.042} & -4.943 & -10.309 & \textbf{0.293} \\
+ &  & RMSE & \textbf{0.0510} & 0.0659 & \underline{0.0647} & 1.1762 \\
+2 & 0.1 & Bias ($\times 10^{-3}$) & \underline{-2.006} & -7.616 & -9.738 & \textbf{0.885} \\
+ &  & RMSE & \textbf{0.0505} & 0.0632 & \underline{0.0624} & 1.0673 \\
+\midrule
+3 & 0.4 & Bias ($\times 10^{-3}$) & \textbf{-0.426} & \underline{-8.284} & -9.460 & -20.300 \\
+ &  & RMSE & \textbf{0.0943} & \underline{0.1209} & 0.1401 & 1.4010 \\
+3 & 0.2 & Bias ($\times 10^{-3}$) & \underline{-4.188} & \textbf{-2.134} & -8.554 & 46.489 \\
+ &  & RMSE & \textbf{0.0905} & 0.1175 & \underline{0.1162} & 1.1230 \\
+3 & 0.1 & Bias ($\times 10^{-3}$) & \textbf{0.878} & \underline{1.965} & -2.452 & -31.359 \\
+ &  & RMSE & \textbf{0.0918} & 0.1123 & \underline{0.1111} & 1.1348 \\
+\bottomrule
+\end{tabular} 
+\end{threeparttable}
+\end{table}

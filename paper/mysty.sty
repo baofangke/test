@@ -1,0 +1,338 @@
+
+% \usepackage{subfigure}
+\graphicspath{{figures/}}
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+\usepackage[T1]{fontenc}
+\usepackage{amsthm,color,bm}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode} 
+\usepackage{mathrsfs}
+\usepackage{bbm}   
+\usepackage{booktabs}
+\usepackage{tabularx}
+% \usepackage{xltabular}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{multirow}
+\usepackage{lscape}
+\usepackage{stmaryrd}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{enumerate}
+%\usepackage{natbib}
+\usepackage{tcolorbox}
+\usepackage{threeparttable}
+%\usepackage{soul} 			% line warpping in english
+%\usepackage{xeCJKfntef}		% line warpping for chinese; require XeLatex
+%\usepackage{algpseudocode}  
+% \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}  
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+%\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+%\usepackage{algpseudocode}  
+
+\newcommand{\STEP}[1]{\STATE \textbf{Step #1:}}
+\newcommand{\Init}{\STATE \textbf{Init: }}
+
+% Redefine the \STATE command to avoid numbering lines
+%\let\oldState\STATE
+%\renewcommand{\STATE}{\oldState \hspace{-1em}}
+
+% \floatname{algorithm}{算法}  
+% \renewcommand{\algorithmicrequire}{\textbf{输入:}}  
+% \renewcommand{\algorithmicensure}{\textbf{输出:}}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{geometry}
+\textwidth 150mm \textheight 220mm \voffset=-1cm \hoffset=-1cm \parskip=8pt
+\newcommand{\be}{\begin{equation}}
+	\newcommand{\ee}{\end{equation}}
+\newcommand{\bas}{\begin{eqnarray*}}
+	\newcommand{\eas}{\end{eqnarray*}}
+\newcommand{\ba}{\begin{eqnarray}}
+	\newcommand{\ea}{\end{eqnarray}}
+\newcommand{\bit}{\begin{itemize}}
+	\newcommand{\eit}{\end{itemize}}
+\newcommand{\sumi}{{\sum_{i=1}^{n}}}
+\newcommand{\pp}{{\mbox{\sc pr}}}
+\newcommand{\Exp}{{\mbox{Exp}}}
+\newcommand{\0}{{\bf 0}}
+\newcommand{\tr}{{\mbox{tr}}}
+\newcommand{\ii}{{\bf i}}
+\newcommand{\var}{{\mbox{var}}}
+\newcommand{\vctr}{{\mbox{vec}}}
+\newcommand{\mat}{{\mbox{Mat}}}
+\newcommand{\red}{\color{red}}
+\newcommand{\blue}{\color{blue}}
+\newcommand{\purple}{\color{purple}}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}  
+\renewcommand{\algorithmicensure}{\textbf{Output:}}  
+
+\newtheorem{cor}{Corollary}
+\newtheorem{pro}{Proposition}
+\makeatletter
+\newcommand{\figcaption}{\def\@captype{figure}\caption}
+\newcommand{\tabcaption}{\def\@captype{table}\caption}
+\makeatother
+\def\proof {{\noindent\bf Proof.}\quad}
+\def\ans {{\noindent\bf Ans.}\quad}
+\def\tr {\mbox{tr}}
+\def\cov {\mbox{Cov}}
+\def\e {{\sf E}}
+\newtheorem{thm}{Theorem}
+\newtheorem{Lemma}{Lemma}
+\newtheorem{remark}{Remark}
+\def\var {{\rm Var}}
+\def\red{\color{red}}
+\usepackage{setspace}
+\usepackage[figuresright]{rotating}
+\doublespacing
+\usepackage{hyperref}
+\usepackage{makecell}
+
+%% code listing setting
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%Code listing style named "mystyle"
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour}, commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+%"mystyle" code listing set
+\lstset{style=mystyle}
+
+\newtheorem{assumption}{Assumption}
+
+% Alternative Assumption!
+\newtheorem{assumptionalt}{Assumption}[assumption]
+
+% New environment
+\newenvironment{assumptionp}[1]{
+	\renewcommand\theassumptionalt{#1}
+	\assumptionalt
+}{\endassumptionalt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% theorem box
+\usepackage{thmtools}
+\usepackage{lipsum}
+
+\declaretheorem[
+shaded={rulecolor=black, rulewidth=1pt},
+name=Theorem,
+]{thmboxed}
+
+\declaretheorem[
+shaded={rulecolor=black, rulewidth=1pt},
+name=Lemma,
+]{lemboxed}
+
+
+\declaretheorem[
+shaded={rulecolor=black, rulewidth=1pt},
+name=Condition,
+]{conboxed}
+
+
+\declaretheorem[
+shaded={rulecolor=black, rulewidth=1pt},
+name=Definition,
+]{defboxed}
+
+\declaretheorem[
+shaded={rulecolor=black, rulewidth=1pt},
+name=Case,
+]{casboxed}
+
+\declaretheorem[
+shaded={bgcolor=white, rulecolor=black, rulewidth=1pt},
+name=Question,
+]{queboxed}
+
+\declaretheorem[
+shaded={bgcolor=white, rulecolor=black, rulewidth=1pt},
+name=Code,
+]{codeboxed}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% abbreviation
+\newcommand{\mA}{\mathcal{A}}
+\newcommand{\mZ}{\mathcal{Z}}
+\newcommand{\mB}{\mathcal{B}}
+\newcommand{\mX}{\mathcal{X}} 
+\newcommand{\mU}{\mathcal{U}} 
+\newcommand{\mT}{\mathcal{T}} 
+\newcommand{\mI}{\mathcal{I}}
+\newcommand{\mJ}{\mathcal{J}}
+\newcommand{\mD}{\mathcal{D}}
+\newcommand{\mR}{\mathcal{R}}
+\newcommand{\mL}{\mathcal{L}}
+\newcommand{\mbr}{\mathbb{R}}
+\newcommand{\mbp}{\mathbb{P}}
+\newcommand{\mbe}{\mathbb{E}}
+\newcommand{\mbs}{\mathbb{S}}
+\newcommand{\mbt}{\mathbb{T}}
+\newcommand{\mG}{\mathcal G}
+\newcommand{\mM}{\mathcal M}
+\newcommand{\mE}{\mathcal E}
+\newcommand{\mP}{\mathcal P}
+\newcommand{\mF}{\mathcal{F}}
+\newcommand{\mH}{\mathcal{H}}
+\newcommand{\ml}{\mathcal{l}}
+\newcommand{\bY}{\boldsymbol Y}
+\newcommand{\bC}{\boldsymbol C}
+\newcommand{\bOmega}{\boldsymbol \Omega}
+\newcommand{\by}{\boldsymbol y}
+\newcommand{\bvare}{\boldsymbol\varepsilon}
+\newcommand{\bz}{\boldsymbol z}
+\newcommand{\bv}{\boldsymbol v}
+\newcommand{\bq}{\boldsymbol q}
+\newcommand{\bomega}{\boldsymbol \omega}
+\newcommand{\br}{\boldsymbol r}
+\newcommand{\bba}{\boldsymbol a}
+\newcommand{\bbe}{\boldsymbol e}
+\newcommand{\bb}{\boldsymbol b}
+\newcommand{\bbm}{\boldsymbol m}
+\newcommand{\bTheta}{\mathbf{\Theta}}
+\newcommand{\bPsi}{\boldsymbol \Psi}
+\newcommand{\bU}{\boldsymbol U}
+\newcommand{\bG}{\boldsymbol G}
+\newcommand{\bQ}{\boldsymbol Q}
+\newcommand{\bPhi}{\boldsymbol \Phi}
+\newcommand{\bu}{{\boldsymbol u}}
+\newcommand{\bnu}{{\boldsymbol \nu}}
+\newcommand{\bbf}{{\boldsymbol f}}
+\newcommand{\bDelta}{{\boldsymbol\Delta}}
+\newcommand{\bdelta}{{\boldsymbol\delta}}
+\newcommand{\bJ}{\boldsymbol J}
+\newcommand{\bLambda}{\boldsymbol \Lambda}
+\newcommand{\bI}{\boldsymbol I}
+\newcommand{\bx}{\boldsymbol x}
+\newcommand{\bB}{\boldsymbol B}
+\newcommand{\bO}{\boldsymbol O}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bZ}{\boldsymbol Z}
+\newcommand{\bt}{\boldsymbol t}
+\newcommand{\boe}{\boldsymbol e}
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bS}{\boldsymbol S}
+\newcommand{\bze}{\boldsymbol 0}
+\newcommand{\bE}{\boldsymbol E}
+\newcommand{\bg}{\boldsymbol g}
+\newcommand{\bF}{\boldsymbol F}
+\newcommand{\bV}{\boldsymbol V}
+\newcommand{\bM}{\boldsymbol M}
+\newcommand{\bR}{\mathbf{R}}
+\newcommand{\bw}{\boldsymbol w}
+\newcommand{\bW}{\boldsymbol W}
+\newcommand{\bH}{\boldsymbol H}
+\newcommand{\bgamma}{{\boldsymbol{\gamma}}}
+\newcommand{\bSigma}{\mathbf{ \Sigma}}
+\newcommand{\bL}{\mathbf{L}}
+\newcommand{\bT}{\mathbf{T}}
+\newcommand{\bK}{\boldsymbol K}
+\newcommand{\bl}{\boldsymbol l}
+\newcommand{\bs}{\boldsymbol s}
+\newcommand{\btheta}{\boldsymbol \theta}
+\newcommand{\brho}{\boldsymbol \rho}
+\newcommand{\bxi}{\boldsymbol \xi}
+\newcommand{\bD}{\boldsymbol D}
+\newcommand{\mS}{\mathcal S}
+\newcommand{\bX}{\boldsymbol X}
+\newcommand{\bbeta}{\boldsymbol \beta}
+\newcommand{\etaib}{\eta_i(\bbeta_\mB)}
+\newcommand{\Xia}{X^{(i)}}
+\def\wh{\widehat}
+\def\wt{\widetilde}
+
+
+\usepackage{enumitem}
+
+\newlist{enumA}{enumerate}{1}
+\setlist[enumA,1]{label=(A\arabic*)}
+
+\newlist{enumB}{enumerate}{1}
+\setlist[enumB,1]{label=(B\arabic*)}
+%\allowdisplaybreaks
+%\newtheorem{thm}{Theorem}
+%\newtheorem{lemma}{Lemma}
+%\newtheorem{lem}{Lemma}
+\newtheorem{defi}{Definition}
+%\newtheorem{rmk}{Remark}
+%\newtheorem{prp}{Proposition}
+%%\newtheorem{clm}{Claim}
+%\newcommand{\bvar}{\boldsymbol\varepsilon}
+%\newcommand{\green}{\color{green}}
+%
+%\newcommand{\xx}{{\bf{x}}}
+%\newcommand{\zz}{{\bf{z}}}
+%\newtheorem{example}{Example}
+%\newtheorem{remark}{Remark}
+%\newcommand{}{\boldsymbol}
+%\def\remark#1{\noindent{\bf Remark #1\ }}
+%\def\proof {{\noindent\bf Proof.}\quad}
+%\usepackage{setspace}
+%\doublespacing
+%\newcommand{\y}{Y}
+%\newcommand{\hbz}{\wh{\boldsymbol z}}
+%\newcommand{\hbgamma}{\wh{\boldsymbol \gamma}}
+%\newcommand{\hbbeta}{\wh{\boldsymbol \beta}}
+%\newcommand{\hbalpha}{\wh{\boldsymbol \alpha}}
+%\pdfminorversion=4
+%\def\balpha{\boldsymbol{\alpha}}
+%\def\bbeta{\boldsymbol{\beta}}
+%\def\bdelta{\boldsymbol{\delta}}
+%\def\bpi{\boldsymbol{\pi}}
+%\def\bPi{\boldsymbol{\Pi}}
+%\def\btheta{\boldsymbol{\theta}}
+%\def\bTheta{\boldsymbol{\Theta}}
+%\def\bSigma{\boldsymbol{\Sigma}}
+%\def\bdelta{\boldsymbol{\delta}}
+%\def\bvarepsilon{\boldsymbol{\varepsilon}}
+%\def\by{\boldsymbol{y}}
+%\def\bh{\boldsymbol{h}}
+%\def\by{\boldsymbol{y}}
+%\def\bW{\boldsymbol{W}}
+%\def\bI{\boldsymbol{I}}
+%\def\bx{\boldsymbol{x}}
+%\def\bt{\boldsymbol{t}}
+%\def\bX{\boldsymbol{X}}
+%\def\bz{\boldsymbol{z}}
+%\def\bZ{\boldsymbol{Z}}
+%\def\bW{\boldsymbol{W}}
+%\def\mH{\mathcal{H}}
+%\def\me{\boldsymbol{\varepsilon}}
+%\newcommand{\bgamma}{{\boldsymbol{\gamma}}}
+%\newcommand{\bS}{\boldsymbol{S}}
+
+
+%\usepackage[linesnumbered,ruled,vlined]{algorithm2e}%[ruled,vlined]{
+%\usepackage{algpseudocode}
+%\usepackage{amsmath}
+%\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm
+%\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm

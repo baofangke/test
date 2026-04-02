@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+
+# MATLAB
+*.asv
+
+# LaTeX build outputs
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.spl
+*.synctex.gz
+*.toc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Optional local outputs
+paper/build/

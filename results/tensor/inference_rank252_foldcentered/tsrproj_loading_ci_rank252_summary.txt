@@ -1,0 +1,34 @@
+tsrProj inference summary for rank [2,5,2]
+total loadings: 205
+significant counts by loading type:
+  band_slice: 5/8
+  condition_slice: 0/2
+  contrast_band: 6/8
+  contrast_global: 0/1
+  contrast_roi_group: 0/3
+  full_tensor: 0/1
+  roi_slice: 1/10
+  shared_band: 5/8
+  shared_global: 0/1
+  shared_roi_group: 1/3
+  single_element: 140/160
+
+significant structured loadings:
+  roi_slice | ROI slice: central_left | delta=-0.610661 | 95% CI [-1.027165, -0.194158]
+  band_slice | Band slice: theta | delta=-1.670626 | 95% CI [-2.306865, -1.034387]
+  band_slice | Band slice: alpha2 | delta=1.142349 | 95% CI [0.775151, 1.509547]
+  band_slice | Band slice: beta1 | delta=0.988733 | 95% CI [0.240719, 1.736748]
+  band_slice | Band slice: gamma1 | delta=-1.692343 | 95% CI [-2.860703, -0.523982]
+  band_slice | Band slice: gamma2 | delta=0.988347 | 95% CI [0.175562, 1.801132]
+  shared_band | shared: theta | delta=-1.670626 | 95% CI [-2.306865, -1.034387]
+  shared_band | shared: alpha2 | delta=1.142349 | 95% CI [0.775151, 1.509547]
+  shared_band | shared: beta1 | delta=0.988733 | 95% CI [0.240719, 1.736748]
+  shared_band | shared: gamma1 | delta=-1.692343 | 95% CI [-2.860703, -0.523982]
+  shared_band | shared: gamma2 | delta=0.988347 | 95% CI [0.175562, 1.801132]
+  contrast_band | contrast: theta | delta=-6.087467 | 95% CI [-8.891614, -3.283320]
+  contrast_band | contrast: alpha1 | delta=4.339694 | 95% CI [2.503357, 6.176032]
+  contrast_band | contrast: beta1 | delta=10.111632 | 95% CI [6.785235, 13.438029]
+  contrast_band | contrast: beta2 | delta=-7.917303 | 95% CI [-11.920791, -3.913815]
+  shared_roi_group | shared: posterior | delta=0.906722 | 95% CI [0.329452, 1.483993]
+  contrast_band | contrast: gamma1 | delta=-19.391315 | 95% CI [-24.282625, -14.500004]
+  contrast_band | contrast: gamma2 | delta=19.717155 | 95% CI [14.817842, 24.616467]

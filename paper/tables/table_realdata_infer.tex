@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+	\centering
+	\caption{Selected projection-based inference results for the HBN EEG analysis. Panel A reports point estimates and nominal 95\% confidence intervals for prespecified loadings under the rank-1 matrix model with covariate $\log_{10}(\mathrm{EC})-\log_{10}(\mathrm{EO})$. Panel B reports the corresponding results for prespecified shared and contrast loadings under the Tucker tensor model with fixed rank $(2,5,2)$. All loadings are normalized to have Frobenius norm one before inference. The reported intervals are pointwise and are not adjusted for multiplicity.}
+	\label{tab:realdata-infer}
+	\begin{threeparttable}
+		\small
+		\begin{tabular}{llcc}
+			\toprule
+			Loading & Description & Estimate & 95\% CI \\
+			\midrule
+			\multicolumn{4}{l}{\textbf{Panel A: Matrix log-contrast model, rank 1}} \\
+			ROI slice & anterior-midline & $0.562$ & $[0.169,\,0.956]$ \\
+			ROI slice & central-right & $-0.529$ & $[-0.979,\,-0.080]$ \\
+			Band slice & alpha2 & $0.715$ & $[0.243,\,1.187]$ \\
+			Global & all elements & $0.045$ & $[-0.146,\,0.237]$ \\
+			\midrule
+			\multicolumn{4}{l}{\textbf{Panel B: Tucker tensor model, fixed rank $(2,5,2)$}} \\
+			Shared global & $(1,1)/\sqrt{2}$ over condition mode & $0.003$ & $[-0.126,\,0.133]$ \\
+			Contrast global & $(1,-1)/\sqrt{2}$ over condition mode & $0.282$ & $[-0.110,\,0.673]$ \\
+			ROI slice & central-left & $-0.611$ & $[-1.027,\,-0.194]$ \\
+			Shared ROI group & posterior & $0.907$ & $[0.329,\,1.484]$ \\
+			Shared band & theta & $-1.671$ & $[-2.307,\,-1.034]$ \\
+			Shared band & alpha2 & $1.142$ & $[0.775,\,1.510]$ \\
+			Shared band & gamma1 & $-1.692$ & $[-2.861,\,-0.524]$ \\
+			Contrast band & alpha1 & $4.340$ & $[2.503,\,6.176]$ \\
+			Contrast band & beta1 & $10.112$ & $[6.785,\,13.438]$ \\
+			Contrast band & gamma1 & $-19.391$ & $[-24.283,\,-14.500]$ \\
+			\bottomrule
+		\end{tabular}
+	\end{threeparttable}
+\end{table}
