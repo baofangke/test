@@ -1,2 +1,0 @@
-analysis_name,condition,transform,rank,cv_mean_val_mse,cv_mean_val_r2,single_element_excludes_zero,row_excludes_zero,column_excludes_zero,full_matrix_excludes_zero
-log EC - log EO,EC_minus_EO,log10,1,7.5900605667038,0.267672030036584,6,2,1,0
